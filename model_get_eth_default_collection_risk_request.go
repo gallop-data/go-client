@@ -101,7 +101,7 @@ func (o *GetEthDefaultCollectionRiskRequest) SetHoldingPeriod(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetEthDefaultCollectionRiskRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -111,7 +111,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthDefaultCollectionRiskRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -119,7 +119,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetEthDefaultCollectionRiskRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -133,7 +133,7 @@ func (o *GetEthDefaultCollectionRiskRequest) SetReptCurr(v string) {
 
 // GetAmount returns the Amount field value if set, zero value otherwise.
 func (o *GetEthDefaultCollectionRiskRequest) GetAmount() int32 {
-	if o == nil || isNil(o.Amount) {
+	if o == nil || IsNil(o.Amount) {
 		var ret int32
 		return ret
 	}
@@ -143,7 +143,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetAmount() int32 {
 // GetAmountOk returns a tuple with the Amount field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthDefaultCollectionRiskRequest) GetAmountOk() (*int32, bool) {
-	if o == nil || isNil(o.Amount) {
+	if o == nil || IsNil(o.Amount) {
 		return nil, false
 	}
 	return o.Amount, true
@@ -151,7 +151,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetAmountOk() (*int32, bool) {
 
 // HasAmount returns a boolean if a field has been set.
 func (o *GetEthDefaultCollectionRiskRequest) HasAmount() bool {
-	if o != nil && !isNil(o.Amount) {
+	if o != nil && !IsNil(o.Amount) {
 		return true
 	}
 
@@ -165,7 +165,7 @@ func (o *GetEthDefaultCollectionRiskRequest) SetAmount(v int32) {
 
 // GetDrawdown returns the Drawdown field value if set, zero value otherwise.
 func (o *GetEthDefaultCollectionRiskRequest) GetDrawdown() bool {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		var ret bool
 		return ret
 	}
@@ -175,7 +175,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetDrawdown() bool {
 // GetDrawdownOk returns a tuple with the Drawdown field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthDefaultCollectionRiskRequest) GetDrawdownOk() (*bool, bool) {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		return nil, false
 	}
 	return o.Drawdown, true
@@ -183,7 +183,7 @@ func (o *GetEthDefaultCollectionRiskRequest) GetDrawdownOk() (*bool, bool) {
 
 // HasDrawdown returns a boolean if a field has been set.
 func (o *GetEthDefaultCollectionRiskRequest) HasDrawdown() bool {
-	if o != nil && !isNil(o.Drawdown) {
+	if o != nil && !IsNil(o.Drawdown) {
 		return true
 	}
 
@@ -207,13 +207,13 @@ func (o GetEthDefaultCollectionRiskRequest) ToMap() (map[string]interface{}, err
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["holding_period"] = o.HoldingPeriod
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.Amount) {
+	if !IsNil(o.Amount) {
 		toSerialize["amount"] = o.Amount
 	}
-	if !isNil(o.Drawdown) {
+	if !IsNil(o.Drawdown) {
 		toSerialize["drawdown"] = o.Drawdown
 	}
 	return toSerialize, nil

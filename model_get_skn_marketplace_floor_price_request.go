@@ -47,7 +47,7 @@ func NewGetSknMarketplaceFloorPriceRequestWithDefaults() *GetSknMarketplaceFloor
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetSknMarketplaceFloorPriceRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -57,7 +57,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -65,7 +65,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -79,7 +79,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetSknMarketplaceFloorPriceRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -89,7 +89,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -97,7 +97,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) SetPageSize(v int32) {
 
 // GetCollectionAddress returns the CollectionAddress field value if set, zero value otherwise.
 func (o *GetSknMarketplaceFloorPriceRequest) GetCollectionAddress() []string {
-	if o == nil || isNil(o.CollectionAddress) {
+	if o == nil || IsNil(o.CollectionAddress) {
 		var ret []string
 		return ret
 	}
@@ -121,7 +121,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetCollectionAddress() []string {
 // GetCollectionAddressOk returns a tuple with the CollectionAddress field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) GetCollectionAddressOk() ([]string, bool) {
-	if o == nil || isNil(o.CollectionAddress) {
+	if o == nil || IsNil(o.CollectionAddress) {
 		return nil, false
 	}
 	return o.CollectionAddress, true
@@ -129,7 +129,7 @@ func (o *GetSknMarketplaceFloorPriceRequest) GetCollectionAddressOk() ([]string,
 
 // HasCollectionAddress returns a boolean if a field has been set.
 func (o *GetSknMarketplaceFloorPriceRequest) HasCollectionAddress() bool {
-	if o != nil && !isNil(o.CollectionAddress) {
+	if o != nil && !IsNil(o.CollectionAddress) {
 		return true
 	}
 
@@ -151,13 +151,13 @@ func (o GetSknMarketplaceFloorPriceRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetSknMarketplaceFloorPriceRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.CollectionAddress) {
+	if !IsNil(o.CollectionAddress) {
 		toSerialize["collection_address"] = o.CollectionAddress
 	}
 	return toSerialize, nil

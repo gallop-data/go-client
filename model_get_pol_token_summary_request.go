@@ -103,7 +103,7 @@ func (o *GetPolTokenSummaryRequest) SetTokenId(v []string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetPolTokenSummaryRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -113,7 +113,7 @@ func (o *GetPolTokenSummaryRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenSummaryRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -121,7 +121,7 @@ func (o *GetPolTokenSummaryRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetPolTokenSummaryRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -135,7 +135,7 @@ func (o *GetPolTokenSummaryRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetPolTokenSummaryRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -145,7 +145,7 @@ func (o *GetPolTokenSummaryRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenSummaryRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -153,7 +153,7 @@ func (o *GetPolTokenSummaryRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetPolTokenSummaryRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -167,7 +167,7 @@ func (o *GetPolTokenSummaryRequest) SetEndDate(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetPolTokenSummaryRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -177,7 +177,7 @@ func (o *GetPolTokenSummaryRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenSummaryRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -185,7 +185,7 @@ func (o *GetPolTokenSummaryRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetPolTokenSummaryRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -199,7 +199,7 @@ func (o *GetPolTokenSummaryRequest) SetReptCurr(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetPolTokenSummaryRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -209,7 +209,7 @@ func (o *GetPolTokenSummaryRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenSummaryRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -217,7 +217,7 @@ func (o *GetPolTokenSummaryRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetPolTokenSummaryRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -241,16 +241,16 @@ func (o GetPolTokenSummaryRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["token_id"] = o.TokenId
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
 	return toSerialize, nil

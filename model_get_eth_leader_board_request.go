@@ -51,7 +51,7 @@ func NewGetEthLeaderBoardRequestWithDefaults() *GetEthLeaderBoardRequest {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetEthLeaderBoardRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -61,7 +61,7 @@ func (o *GetEthLeaderBoardRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthLeaderBoardRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -69,7 +69,7 @@ func (o *GetEthLeaderBoardRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetEthLeaderBoardRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -83,7 +83,7 @@ func (o *GetEthLeaderBoardRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetEthLeaderBoardRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -93,7 +93,7 @@ func (o *GetEthLeaderBoardRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthLeaderBoardRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -101,7 +101,7 @@ func (o *GetEthLeaderBoardRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetEthLeaderBoardRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -171,10 +171,10 @@ func (o GetEthLeaderBoardRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetEthLeaderBoardRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
 	toSerialize["interval"] = o.Interval

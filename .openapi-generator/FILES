@@ -27,6 +27,7 @@ docs/GetEthCustomCollectionRiskRequestHarParams.md
 docs/GetEthCustomTokenRiskRequest.md
 docs/GetEthDefaultCollectionRiskRequest.md
 docs/GetEthDefaultTokenRiskRequest.md
+docs/GetEthEnsLookupRequest.md
 docs/GetEthHistoricalEventsRequest.md
 docs/GetEthHistoricalTransactionsRequest.md
 docs/GetEthLeaderBoardRequest.md
@@ -121,6 +122,7 @@ model_get_eth_custom_collection_risk_request_har_params.go
 model_get_eth_custom_token_risk_request.go
 model_get_eth_default_collection_risk_request.go
 model_get_eth_default_token_risk_request.go
+model_get_eth_ens_lookup_request.go
 model_get_eth_historical_events_request.go
 model_get_eth_historical_transactions_request.go
 model_get_eth_leader_board_request.go

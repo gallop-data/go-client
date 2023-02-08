@@ -105,7 +105,7 @@ func (o *GetEthTokenTransactionsRequest) SetTokenId(v string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetEthTokenTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -115,7 +115,7 @@ func (o *GetEthTokenTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthTokenTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -123,7 +123,7 @@ func (o *GetEthTokenTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetEthTokenTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -137,7 +137,7 @@ func (o *GetEthTokenTransactionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetEthTokenTransactionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -147,7 +147,7 @@ func (o *GetEthTokenTransactionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthTokenTransactionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -155,7 +155,7 @@ func (o *GetEthTokenTransactionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetEthTokenTransactionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -169,7 +169,7 @@ func (o *GetEthTokenTransactionsRequest) SetPageSize(v int32) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetEthTokenTransactionsRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -179,7 +179,7 @@ func (o *GetEthTokenTransactionsRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthTokenTransactionsRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -187,7 +187,7 @@ func (o *GetEthTokenTransactionsRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetEthTokenTransactionsRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -201,7 +201,7 @@ func (o *GetEthTokenTransactionsRequest) SetStartDate(v string) {
 
 // GetStartBlockNumber returns the StartBlockNumber field value if set, zero value otherwise.
 func (o *GetEthTokenTransactionsRequest) GetStartBlockNumber() int32 {
-	if o == nil || isNil(o.StartBlockNumber) {
+	if o == nil || IsNil(o.StartBlockNumber) {
 		var ret int32
 		return ret
 	}
@@ -211,7 +211,7 @@ func (o *GetEthTokenTransactionsRequest) GetStartBlockNumber() int32 {
 // GetStartBlockNumberOk returns a tuple with the StartBlockNumber field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthTokenTransactionsRequest) GetStartBlockNumberOk() (*int32, bool) {
-	if o == nil || isNil(o.StartBlockNumber) {
+	if o == nil || IsNil(o.StartBlockNumber) {
 		return nil, false
 	}
 	return o.StartBlockNumber, true
@@ -219,7 +219,7 @@ func (o *GetEthTokenTransactionsRequest) GetStartBlockNumberOk() (*int32, bool) 
 
 // HasStartBlockNumber returns a boolean if a field has been set.
 func (o *GetEthTokenTransactionsRequest) HasStartBlockNumber() bool {
-	if o != nil && !isNil(o.StartBlockNumber) {
+	if o != nil && !IsNil(o.StartBlockNumber) {
 		return true
 	}
 
@@ -233,7 +233,7 @@ func (o *GetEthTokenTransactionsRequest) SetStartBlockNumber(v int32) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetEthTokenTransactionsRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -243,7 +243,7 @@ func (o *GetEthTokenTransactionsRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthTokenTransactionsRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -251,7 +251,7 @@ func (o *GetEthTokenTransactionsRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetEthTokenTransactionsRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -275,19 +275,19 @@ func (o GetEthTokenTransactionsRequest) ToMap() (map[string]interface{}, error) 
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["token_id"] = o.TokenId
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.StartBlockNumber) {
+	if !IsNil(o.StartBlockNumber) {
 		toSerialize["start_block_number"] = o.StartBlockNumber
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
 	return toSerialize, nil

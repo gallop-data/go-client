@@ -53,7 +53,7 @@ func NewGetPolCollectionsRequestWithDefaults() *GetPolCollectionsRequest {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -63,7 +63,7 @@ func (o *GetPolCollectionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -71,7 +71,7 @@ func (o *GetPolCollectionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -85,7 +85,7 @@ func (o *GetPolCollectionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -95,7 +95,7 @@ func (o *GetPolCollectionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -103,7 +103,7 @@ func (o *GetPolCollectionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -117,7 +117,7 @@ func (o *GetPolCollectionsRequest) SetPageSize(v int32) {
 
 // GetCollectionName returns the CollectionName field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetCollectionName() string {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		var ret string
 		return ret
 	}
@@ -127,7 +127,7 @@ func (o *GetPolCollectionsRequest) GetCollectionName() string {
 // GetCollectionNameOk returns a tuple with the CollectionName field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetCollectionNameOk() (*string, bool) {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		return nil, false
 	}
 	return o.CollectionName, true
@@ -135,7 +135,7 @@ func (o *GetPolCollectionsRequest) GetCollectionNameOk() (*string, bool) {
 
 // HasCollectionName returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasCollectionName() bool {
-	if o != nil && !isNil(o.CollectionName) {
+	if o != nil && !IsNil(o.CollectionName) {
 		return true
 	}
 
@@ -149,7 +149,7 @@ func (o *GetPolCollectionsRequest) SetCollectionName(v string) {
 
 // GetTraded returns the Traded field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetTraded() bool {
-	if o == nil || isNil(o.Traded) {
+	if o == nil || IsNil(o.Traded) {
 		var ret bool
 		return ret
 	}
@@ -159,7 +159,7 @@ func (o *GetPolCollectionsRequest) GetTraded() bool {
 // GetTradedOk returns a tuple with the Traded field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetTradedOk() (*bool, bool) {
-	if o == nil || isNil(o.Traded) {
+	if o == nil || IsNil(o.Traded) {
 		return nil, false
 	}
 	return o.Traded, true
@@ -167,7 +167,7 @@ func (o *GetPolCollectionsRequest) GetTradedOk() (*bool, bool) {
 
 // HasTraded returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasTraded() bool {
-	if o != nil && !isNil(o.Traded) {
+	if o != nil && !IsNil(o.Traded) {
 		return true
 	}
 
@@ -181,7 +181,7 @@ func (o *GetPolCollectionsRequest) SetTraded(v bool) {
 
 // GetCreatedAfter returns the CreatedAfter field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetCreatedAfter() string {
-	if o == nil || isNil(o.CreatedAfter) {
+	if o == nil || IsNil(o.CreatedAfter) {
 		var ret string
 		return ret
 	}
@@ -191,7 +191,7 @@ func (o *GetPolCollectionsRequest) GetCreatedAfter() string {
 // GetCreatedAfterOk returns a tuple with the CreatedAfter field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetCreatedAfterOk() (*string, bool) {
-	if o == nil || isNil(o.CreatedAfter) {
+	if o == nil || IsNil(o.CreatedAfter) {
 		return nil, false
 	}
 	return o.CreatedAfter, true
@@ -199,7 +199,7 @@ func (o *GetPolCollectionsRequest) GetCreatedAfterOk() (*string, bool) {
 
 // HasCreatedAfter returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasCreatedAfter() bool {
-	if o != nil && !isNil(o.CreatedAfter) {
+	if o != nil && !IsNil(o.CreatedAfter) {
 		return true
 	}
 
@@ -213,7 +213,7 @@ func (o *GetPolCollectionsRequest) SetCreatedAfter(v string) {
 
 // GetSortBy returns the SortBy field value if set, zero value otherwise.
 func (o *GetPolCollectionsRequest) GetSortBy() string {
-	if o == nil || isNil(o.SortBy) {
+	if o == nil || IsNil(o.SortBy) {
 		var ret string
 		return ret
 	}
@@ -223,7 +223,7 @@ func (o *GetPolCollectionsRequest) GetSortBy() string {
 // GetSortByOk returns a tuple with the SortBy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionsRequest) GetSortByOk() (*string, bool) {
-	if o == nil || isNil(o.SortBy) {
+	if o == nil || IsNil(o.SortBy) {
 		return nil, false
 	}
 	return o.SortBy, true
@@ -231,7 +231,7 @@ func (o *GetPolCollectionsRequest) GetSortByOk() (*string, bool) {
 
 // HasSortBy returns a boolean if a field has been set.
 func (o *GetPolCollectionsRequest) HasSortBy() bool {
-	if o != nil && !isNil(o.SortBy) {
+	if o != nil && !IsNil(o.SortBy) {
 		return true
 	}
 
@@ -253,22 +253,22 @@ func (o GetPolCollectionsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetPolCollectionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.CollectionName) {
+	if !IsNil(o.CollectionName) {
 		toSerialize["collection_name"] = o.CollectionName
 	}
-	if !isNil(o.Traded) {
+	if !IsNil(o.Traded) {
 		toSerialize["traded"] = o.Traded
 	}
-	if !isNil(o.CreatedAfter) {
+	if !IsNil(o.CreatedAfter) {
 		toSerialize["created_after"] = o.CreatedAfter
 	}
-	if !isNil(o.SortBy) {
+	if !IsNil(o.SortBy) {
 		toSerialize["sort_by"] = o.SortBy
 	}
 	return toSerialize, nil

@@ -91,7 +91,7 @@ func (o *GetEthCollectionForecastsRequest) SetCollectionAddress(v string) {
 
 // GetPercentiles returns the Percentiles field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetPercentiles() []int32 {
-	if o == nil || isNil(o.Percentiles) {
+	if o == nil || IsNil(o.Percentiles) {
 		var ret []int32
 		return ret
 	}
@@ -101,7 +101,7 @@ func (o *GetEthCollectionForecastsRequest) GetPercentiles() []int32 {
 // GetPercentilesOk returns a tuple with the Percentiles field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetPercentilesOk() ([]int32, bool) {
-	if o == nil || isNil(o.Percentiles) {
+	if o == nil || IsNil(o.Percentiles) {
 		return nil, false
 	}
 	return o.Percentiles, true
@@ -109,7 +109,7 @@ func (o *GetEthCollectionForecastsRequest) GetPercentilesOk() ([]int32, bool) {
 
 // HasPercentiles returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasPercentiles() bool {
-	if o != nil && !isNil(o.Percentiles) {
+	if o != nil && !IsNil(o.Percentiles) {
 		return true
 	}
 
@@ -123,7 +123,7 @@ func (o *GetEthCollectionForecastsRequest) SetPercentiles(v []int32) {
 
 // GetVoltype returns the Voltype field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetVoltype() string {
-	if o == nil || isNil(o.Voltype) {
+	if o == nil || IsNil(o.Voltype) {
 		var ret string
 		return ret
 	}
@@ -133,7 +133,7 @@ func (o *GetEthCollectionForecastsRequest) GetVoltype() string {
 // GetVoltypeOk returns a tuple with the Voltype field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetVoltypeOk() (*string, bool) {
-	if o == nil || isNil(o.Voltype) {
+	if o == nil || IsNil(o.Voltype) {
 		return nil, false
 	}
 	return o.Voltype, true
@@ -141,7 +141,7 @@ func (o *GetEthCollectionForecastsRequest) GetVoltypeOk() (*string, bool) {
 
 // HasVoltype returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasVoltype() bool {
-	if o != nil && !isNil(o.Voltype) {
+	if o != nil && !IsNil(o.Voltype) {
 		return true
 	}
 
@@ -155,7 +155,7 @@ func (o *GetEthCollectionForecastsRequest) SetVoltype(v string) {
 
 // GetHorizon returns the Horizon field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetHorizon() int32 {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		var ret int32
 		return ret
 	}
@@ -165,7 +165,7 @@ func (o *GetEthCollectionForecastsRequest) GetHorizon() int32 {
 // GetHorizonOk returns a tuple with the Horizon field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetHorizonOk() (*int32, bool) {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		return nil, false
 	}
 	return o.Horizon, true
@@ -173,7 +173,7 @@ func (o *GetEthCollectionForecastsRequest) GetHorizonOk() (*int32, bool) {
 
 // HasHorizon returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasHorizon() bool {
-	if o != nil && !isNil(o.Horizon) {
+	if o != nil && !IsNil(o.Horizon) {
 		return true
 	}
 
@@ -187,7 +187,7 @@ func (o *GetEthCollectionForecastsRequest) SetHorizon(v int32) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -197,7 +197,7 @@ func (o *GetEthCollectionForecastsRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -205,7 +205,7 @@ func (o *GetEthCollectionForecastsRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -219,7 +219,7 @@ func (o *GetEthCollectionForecastsRequest) SetFrequency(v string) {
 
 // GetDist returns the Dist field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetDist() string {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		var ret string
 		return ret
 	}
@@ -229,7 +229,7 @@ func (o *GetEthCollectionForecastsRequest) GetDist() string {
 // GetDistOk returns a tuple with the Dist field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetDistOk() (*string, bool) {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		return nil, false
 	}
 	return o.Dist, true
@@ -237,7 +237,7 @@ func (o *GetEthCollectionForecastsRequest) GetDistOk() (*string, bool) {
 
 // HasDist returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasDist() bool {
-	if o != nil && !isNil(o.Dist) {
+	if o != nil && !IsNil(o.Dist) {
 		return true
 	}
 
@@ -251,7 +251,7 @@ func (o *GetEthCollectionForecastsRequest) SetDist(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -261,7 +261,7 @@ func (o *GetEthCollectionForecastsRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -269,7 +269,7 @@ func (o *GetEthCollectionForecastsRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -283,7 +283,7 @@ func (o *GetEthCollectionForecastsRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -293,7 +293,7 @@ func (o *GetEthCollectionForecastsRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -301,7 +301,7 @@ func (o *GetEthCollectionForecastsRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -315,7 +315,7 @@ func (o *GetEthCollectionForecastsRequest) SetEndDate(v string) {
 
 // GetReturnPriceForecasts returns the ReturnPriceForecasts field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetReturnPriceForecasts() bool {
-	if o == nil || isNil(o.ReturnPriceForecasts) {
+	if o == nil || IsNil(o.ReturnPriceForecasts) {
 		var ret bool
 		return ret
 	}
@@ -325,7 +325,7 @@ func (o *GetEthCollectionForecastsRequest) GetReturnPriceForecasts() bool {
 // GetReturnPriceForecastsOk returns a tuple with the ReturnPriceForecasts field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetReturnPriceForecastsOk() (*bool, bool) {
-	if o == nil || isNil(o.ReturnPriceForecasts) {
+	if o == nil || IsNil(o.ReturnPriceForecasts) {
 		return nil, false
 	}
 	return o.ReturnPriceForecasts, true
@@ -333,7 +333,7 @@ func (o *GetEthCollectionForecastsRequest) GetReturnPriceForecastsOk() (*bool, b
 
 // HasReturnPriceForecasts returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasReturnPriceForecasts() bool {
-	if o != nil && !isNil(o.ReturnPriceForecasts) {
+	if o != nil && !IsNil(o.ReturnPriceForecasts) {
 		return true
 	}
 
@@ -347,7 +347,7 @@ func (o *GetEthCollectionForecastsRequest) SetReturnPriceForecasts(v bool) {
 
 // GetAlpha returns the Alpha field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetAlpha() float32 {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		var ret float32
 		return ret
 	}
@@ -357,7 +357,7 @@ func (o *GetEthCollectionForecastsRequest) GetAlpha() float32 {
 // GetAlphaOk returns a tuple with the Alpha field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetAlphaOk() (*float32, bool) {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		return nil, false
 	}
 	return o.Alpha, true
@@ -365,7 +365,7 @@ func (o *GetEthCollectionForecastsRequest) GetAlphaOk() (*float32, bool) {
 
 // HasAlpha returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasAlpha() bool {
-	if o != nil && !isNil(o.Alpha) {
+	if o != nil && !IsNil(o.Alpha) {
 		return true
 	}
 
@@ -379,7 +379,7 @@ func (o *GetEthCollectionForecastsRequest) SetAlpha(v float32) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -389,7 +389,7 @@ func (o *GetEthCollectionForecastsRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -397,7 +397,7 @@ func (o *GetEthCollectionForecastsRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -411,7 +411,7 @@ func (o *GetEthCollectionForecastsRequest) SetReptCurr(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -421,7 +421,7 @@ func (o *GetEthCollectionForecastsRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -429,7 +429,7 @@ func (o *GetEthCollectionForecastsRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -443,7 +443,7 @@ func (o *GetEthCollectionForecastsRequest) SetExcludeWash(v bool) {
 
 // GetArchParams returns the ArchParams field value if set, zero value otherwise.
 func (o *GetEthCollectionForecastsRequest) GetArchParams() GetEthCollectionForecastsRequestArchParams {
-	if o == nil || isNil(o.ArchParams) {
+	if o == nil || IsNil(o.ArchParams) {
 		var ret GetEthCollectionForecastsRequestArchParams
 		return ret
 	}
@@ -453,7 +453,7 @@ func (o *GetEthCollectionForecastsRequest) GetArchParams() GetEthCollectionForec
 // GetArchParamsOk returns a tuple with the ArchParams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionForecastsRequest) GetArchParamsOk() (*GetEthCollectionForecastsRequestArchParams, bool) {
-	if o == nil || isNil(o.ArchParams) {
+	if o == nil || IsNil(o.ArchParams) {
 		return nil, false
 	}
 	return o.ArchParams, true
@@ -461,7 +461,7 @@ func (o *GetEthCollectionForecastsRequest) GetArchParamsOk() (*GetEthCollectionF
 
 // HasArchParams returns a boolean if a field has been set.
 func (o *GetEthCollectionForecastsRequest) HasArchParams() bool {
-	if o != nil && !isNil(o.ArchParams) {
+	if o != nil && !IsNil(o.ArchParams) {
 		return true
 	}
 
@@ -484,40 +484,40 @@ func (o GetEthCollectionForecastsRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthCollectionForecastsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Percentiles) {
+	if !IsNil(o.Percentiles) {
 		toSerialize["percentiles"] = o.Percentiles
 	}
-	if !isNil(o.Voltype) {
+	if !IsNil(o.Voltype) {
 		toSerialize["voltype"] = o.Voltype
 	}
-	if !isNil(o.Horizon) {
+	if !IsNil(o.Horizon) {
 		toSerialize["horizon"] = o.Horizon
 	}
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.Dist) {
+	if !IsNil(o.Dist) {
 		toSerialize["dist"] = o.Dist
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.ReturnPriceForecasts) {
+	if !IsNil(o.ReturnPriceForecasts) {
 		toSerialize["return_price_forecasts"] = o.ReturnPriceForecasts
 	}
-	if !isNil(o.Alpha) {
+	if !IsNil(o.Alpha) {
 		toSerialize["alpha"] = o.Alpha
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
-	if !isNil(o.ArchParams) {
+	if !IsNil(o.ArchParams) {
 		toSerialize["arch_params"] = o.ArchParams
 	}
 	return toSerialize, nil

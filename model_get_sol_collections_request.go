@@ -47,7 +47,7 @@ func NewGetSolCollectionsRequestWithDefaults() *GetSolCollectionsRequest {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetSolCollectionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -57,7 +57,7 @@ func (o *GetSolCollectionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -65,7 +65,7 @@ func (o *GetSolCollectionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetSolCollectionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -79,7 +79,7 @@ func (o *GetSolCollectionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetSolCollectionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -89,7 +89,7 @@ func (o *GetSolCollectionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -97,7 +97,7 @@ func (o *GetSolCollectionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetSolCollectionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o *GetSolCollectionsRequest) SetPageSize(v int32) {
 
 // GetCollectionName returns the CollectionName field value if set, zero value otherwise.
 func (o *GetSolCollectionsRequest) GetCollectionName() string {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		var ret string
 		return ret
 	}
@@ -121,7 +121,7 @@ func (o *GetSolCollectionsRequest) GetCollectionName() string {
 // GetCollectionNameOk returns a tuple with the CollectionName field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionsRequest) GetCollectionNameOk() (*string, bool) {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		return nil, false
 	}
 	return o.CollectionName, true
@@ -129,7 +129,7 @@ func (o *GetSolCollectionsRequest) GetCollectionNameOk() (*string, bool) {
 
 // HasCollectionName returns a boolean if a field has been set.
 func (o *GetSolCollectionsRequest) HasCollectionName() bool {
-	if o != nil && !isNil(o.CollectionName) {
+	if o != nil && !IsNil(o.CollectionName) {
 		return true
 	}
 
@@ -151,13 +151,13 @@ func (o GetSolCollectionsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetSolCollectionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.CollectionName) {
+	if !IsNil(o.CollectionName) {
 		toSerialize["collection_name"] = o.CollectionName
 	}
 	return toSerialize, nil

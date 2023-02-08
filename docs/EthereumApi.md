@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**GetEthCustomTokenRisk**](EthereumApi.md#GetEthCustomTokenRisk) | **Post** /insights/eth/getCustomTokenRisk | Custom Volatility &amp; Risk Metrics by Token
 [**GetEthDefaultCollectionRisk**](EthereumApi.md#GetEthDefaultCollectionRisk) | **Post** /insights/eth/getDefaultCollectionRisk | Default Volatility &amp; Risk Metrics by Collection
 [**GetEthDefaultTokenRisk**](EthereumApi.md#GetEthDefaultTokenRisk) | **Post** /insights/eth/getDefaultTokenRisk | Default Volatility &amp; Risk Metrics by Token
+[**GetEthEnsLookup**](EthereumApi.md#GetEthEnsLookup) | **Post** /data/eth/getEnsLookup | ENS Lookup
 [**GetEthHistoricalEvents**](EthereumApi.md#GetEthHistoricalEvents) | **Post** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 [**GetEthHistoricalTransactions**](EthereumApi.md#GetEthHistoricalTransactions) | **Post** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 [**GetEthLeaderBoard**](EthereumApi.md#GetEthLeaderBoard) | **Post** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
@@ -850,6 +851,70 @@ Other parameters are passed through a pointer to a apiGetEthDefaultTokenRiskRequ
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **getEthDefaultTokenRiskRequest** | [**GetEthDefaultTokenRiskRequest**](GetEthDefaultTokenRiskRequest.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetEthEnsLookup
+
+> GetEthEnsLookup(ctx).GetEthEnsLookupRequest(getEthEnsLookupRequest).Execute()
+
+ENS Lookup
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+)
+
+func main() {
+    getEthEnsLookupRequest := *openapiclient.NewGetEthEnsLookupRequest() // GetEthEnsLookupRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    r, err := apiClient.EthereumApi.GetEthEnsLookup(context.Background()).GetEthEnsLookupRequest(getEthEnsLookupRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `EthereumApi.GetEthEnsLookup``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiGetEthEnsLookupRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **getEthEnsLookupRequest** | [**GetEthEnsLookupRequest**](GetEthEnsLookupRequest.md) |  | 
 
 ### Return type
 

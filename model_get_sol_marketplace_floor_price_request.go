@@ -47,7 +47,7 @@ func NewGetSolMarketplaceFloorPriceRequestWithDefaults() *GetSolMarketplaceFloor
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetSolMarketplaceFloorPriceRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -57,7 +57,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -65,7 +65,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -79,7 +79,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetSolMarketplaceFloorPriceRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -89,7 +89,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -97,7 +97,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) SetPageSize(v int32) {
 
 // GetCollectionTag returns the CollectionTag field value if set, zero value otherwise.
 func (o *GetSolMarketplaceFloorPriceRequest) GetCollectionTag() []string {
-	if o == nil || isNil(o.CollectionTag) {
+	if o == nil || IsNil(o.CollectionTag) {
 		var ret []string
 		return ret
 	}
@@ -121,7 +121,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetCollectionTag() []string {
 // GetCollectionTagOk returns a tuple with the CollectionTag field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) GetCollectionTagOk() ([]string, bool) {
-	if o == nil || isNil(o.CollectionTag) {
+	if o == nil || IsNil(o.CollectionTag) {
 		return nil, false
 	}
 	return o.CollectionTag, true
@@ -129,7 +129,7 @@ func (o *GetSolMarketplaceFloorPriceRequest) GetCollectionTagOk() ([]string, boo
 
 // HasCollectionTag returns a boolean if a field has been set.
 func (o *GetSolMarketplaceFloorPriceRequest) HasCollectionTag() bool {
-	if o != nil && !isNil(o.CollectionTag) {
+	if o != nil && !IsNil(o.CollectionTag) {
 		return true
 	}
 
@@ -151,13 +151,13 @@ func (o GetSolMarketplaceFloorPriceRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetSolMarketplaceFloorPriceRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.CollectionTag) {
+	if !IsNil(o.CollectionTag) {
 		toSerialize["collection_tag"] = o.CollectionTag
 	}
 	return toSerialize, nil

@@ -72,7 +72,7 @@ func (o *GetSolRarityRequest) SetCollectionTag(v string) {
 
 // GetMintAddress returns the MintAddress field value if set, zero value otherwise.
 func (o *GetSolRarityRequest) GetMintAddress() []string {
-	if o == nil || isNil(o.MintAddress) {
+	if o == nil || IsNil(o.MintAddress) {
 		var ret []string
 		return ret
 	}
@@ -82,7 +82,7 @@ func (o *GetSolRarityRequest) GetMintAddress() []string {
 // GetMintAddressOk returns a tuple with the MintAddress field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolRarityRequest) GetMintAddressOk() ([]string, bool) {
-	if o == nil || isNil(o.MintAddress) {
+	if o == nil || IsNil(o.MintAddress) {
 		return nil, false
 	}
 	return o.MintAddress, true
@@ -90,7 +90,7 @@ func (o *GetSolRarityRequest) GetMintAddressOk() ([]string, bool) {
 
 // HasMintAddress returns a boolean if a field has been set.
 func (o *GetSolRarityRequest) HasMintAddress() bool {
-	if o != nil && !isNil(o.MintAddress) {
+	if o != nil && !IsNil(o.MintAddress) {
 		return true
 	}
 
@@ -104,7 +104,7 @@ func (o *GetSolRarityRequest) SetMintAddress(v []string) {
 
 // GetWeights returns the Weights field value if set, zero value otherwise.
 func (o *GetSolRarityRequest) GetWeights() map[string]interface{} {
-	if o == nil || isNil(o.Weights) {
+	if o == nil || IsNil(o.Weights) {
 		var ret map[string]interface{}
 		return ret
 	}
@@ -114,7 +114,7 @@ func (o *GetSolRarityRequest) GetWeights() map[string]interface{} {
 // GetWeightsOk returns a tuple with the Weights field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolRarityRequest) GetWeightsOk() (map[string]interface{}, bool) {
-	if o == nil || isNil(o.Weights) {
+	if o == nil || IsNil(o.Weights) {
 		return map[string]interface{}{}, false
 	}
 	return o.Weights, true
@@ -122,7 +122,7 @@ func (o *GetSolRarityRequest) GetWeightsOk() (map[string]interface{}, bool) {
 
 // HasWeights returns a boolean if a field has been set.
 func (o *GetSolRarityRequest) HasWeights() bool {
-	if o != nil && !isNil(o.Weights) {
+	if o != nil && !IsNil(o.Weights) {
 		return true
 	}
 
@@ -145,10 +145,10 @@ func (o GetSolRarityRequest) MarshalJSON() ([]byte, error) {
 func (o GetSolRarityRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_tag"] = o.CollectionTag
-	if !isNil(o.MintAddress) {
+	if !IsNil(o.MintAddress) {
 		toSerialize["mint_address"] = o.MintAddress
 	}
-	if !isNil(o.Weights) {
+	if !IsNil(o.Weights) {
 		toSerialize["weights"] = o.Weights
 	}
 	return toSerialize, nil

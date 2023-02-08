@@ -76,7 +76,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) SetCollectionAddress(v string) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -86,7 +86,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -94,7 +94,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetFrequencyOk() (*string, bool)
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -108,7 +108,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) SetFrequency(v string) {
 
 // GetGroupBy returns the GroupBy field value if set, zero value otherwise.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetGroupBy() string {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		var ret string
 		return ret
 	}
@@ -118,7 +118,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetGroupBy() string {
 // GetGroupByOk returns a tuple with the GroupBy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetGroupByOk() (*string, bool) {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		return nil, false
 	}
 	return o.GroupBy, true
@@ -126,7 +126,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetGroupByOk() (*string, bool) {
 
 // HasGroupBy returns a boolean if a field has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) HasGroupBy() bool {
-	if o != nil && !isNil(o.GroupBy) {
+	if o != nil && !IsNil(o.GroupBy) {
 		return true
 	}
 
@@ -140,7 +140,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) SetGroupBy(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -150,7 +150,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -158,7 +158,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetStartDateOk() (*string, bool)
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -172,7 +172,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -182,7 +182,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -190,7 +190,7 @@ func (o *GetEthCollectionFloorPriceOHLCRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetEthCollectionFloorPriceOHLCRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -213,16 +213,16 @@ func (o GetEthCollectionFloorPriceOHLCRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthCollectionFloorPriceOHLCRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.GroupBy) {
+	if !IsNil(o.GroupBy) {
 		toSerialize["group_by"] = o.GroupBy
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
 	return toSerialize, nil

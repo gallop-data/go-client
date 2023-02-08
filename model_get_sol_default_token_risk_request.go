@@ -99,7 +99,7 @@ func (o *GetSolDefaultTokenRiskRequest) SetHoldingPeriod(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetSolDefaultTokenRiskRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -109,7 +109,7 @@ func (o *GetSolDefaultTokenRiskRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolDefaultTokenRiskRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -117,7 +117,7 @@ func (o *GetSolDefaultTokenRiskRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetSolDefaultTokenRiskRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -131,7 +131,7 @@ func (o *GetSolDefaultTokenRiskRequest) SetReptCurr(v string) {
 
 // GetDrawdown returns the Drawdown field value if set, zero value otherwise.
 func (o *GetSolDefaultTokenRiskRequest) GetDrawdown() bool {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		var ret bool
 		return ret
 	}
@@ -141,7 +141,7 @@ func (o *GetSolDefaultTokenRiskRequest) GetDrawdown() bool {
 // GetDrawdownOk returns a tuple with the Drawdown field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolDefaultTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		return nil, false
 	}
 	return o.Drawdown, true
@@ -149,7 +149,7 @@ func (o *GetSolDefaultTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
 
 // HasDrawdown returns a boolean if a field has been set.
 func (o *GetSolDefaultTokenRiskRequest) HasDrawdown() bool {
-	if o != nil && !isNil(o.Drawdown) {
+	if o != nil && !IsNil(o.Drawdown) {
 		return true
 	}
 
@@ -173,10 +173,10 @@ func (o GetSolDefaultTokenRiskRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["mint_address"] = o.MintAddress
 	toSerialize["holding_period"] = o.HoldingPeriod
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.Drawdown) {
+	if !IsNil(o.Drawdown) {
 		toSerialize["drawdown"] = o.Drawdown
 	}
 	return toSerialize, nil

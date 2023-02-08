@@ -105,7 +105,7 @@ func (o *GetPolTokenAppraisalRequest) SetTokenId(v []string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetPolTokenAppraisalRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -115,7 +115,7 @@ func (o *GetPolTokenAppraisalRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenAppraisalRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -123,7 +123,7 @@ func (o *GetPolTokenAppraisalRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetPolTokenAppraisalRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -137,7 +137,7 @@ func (o *GetPolTokenAppraisalRequest) SetReptCurr(v string) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetPolTokenAppraisalRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -147,7 +147,7 @@ func (o *GetPolTokenAppraisalRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenAppraisalRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -155,7 +155,7 @@ func (o *GetPolTokenAppraisalRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetPolTokenAppraisalRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -169,7 +169,7 @@ func (o *GetPolTokenAppraisalRequest) SetFrequency(v string) {
 
 // GetHorizon returns the Horizon field value if set, zero value otherwise.
 func (o *GetPolTokenAppraisalRequest) GetHorizon() int32 {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		var ret int32
 		return ret
 	}
@@ -179,7 +179,7 @@ func (o *GetPolTokenAppraisalRequest) GetHorizon() int32 {
 // GetHorizonOk returns a tuple with the Horizon field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenAppraisalRequest) GetHorizonOk() (*int32, bool) {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		return nil, false
 	}
 	return o.Horizon, true
@@ -187,7 +187,7 @@ func (o *GetPolTokenAppraisalRequest) GetHorizonOk() (*int32, bool) {
 
 // HasHorizon returns a boolean if a field has been set.
 func (o *GetPolTokenAppraisalRequest) HasHorizon() bool {
-	if o != nil && !isNil(o.Horizon) {
+	if o != nil && !IsNil(o.Horizon) {
 		return true
 	}
 
@@ -201,7 +201,7 @@ func (o *GetPolTokenAppraisalRequest) SetHorizon(v int32) {
 
 // GetAlpha returns the Alpha field value if set, zero value otherwise.
 func (o *GetPolTokenAppraisalRequest) GetAlpha() float32 {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		var ret float32
 		return ret
 	}
@@ -211,7 +211,7 @@ func (o *GetPolTokenAppraisalRequest) GetAlpha() float32 {
 // GetAlphaOk returns a tuple with the Alpha field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenAppraisalRequest) GetAlphaOk() (*float32, bool) {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		return nil, false
 	}
 	return o.Alpha, true
@@ -219,7 +219,7 @@ func (o *GetPolTokenAppraisalRequest) GetAlphaOk() (*float32, bool) {
 
 // HasAlpha returns a boolean if a field has been set.
 func (o *GetPolTokenAppraisalRequest) HasAlpha() bool {
-	if o != nil && !isNil(o.Alpha) {
+	if o != nil && !IsNil(o.Alpha) {
 		return true
 	}
 
@@ -233,7 +233,7 @@ func (o *GetPolTokenAppraisalRequest) SetAlpha(v float32) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetPolTokenAppraisalRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -243,7 +243,7 @@ func (o *GetPolTokenAppraisalRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenAppraisalRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -251,7 +251,7 @@ func (o *GetPolTokenAppraisalRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetPolTokenAppraisalRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -275,19 +275,19 @@ func (o GetPolTokenAppraisalRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["token_id"] = o.TokenId
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.Horizon) {
+	if !IsNil(o.Horizon) {
 		toSerialize["horizon"] = o.Horizon
 	}
-	if !isNil(o.Alpha) {
+	if !IsNil(o.Alpha) {
 		toSerialize["alpha"] = o.Alpha
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
 	return toSerialize, nil

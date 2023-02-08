@@ -116,7 +116,7 @@ func (o *GetPolTokenForecastsRequest) SetTokenId(v []string) {
 
 // GetVoltype returns the Voltype field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetVoltype() string {
-	if o == nil || isNil(o.Voltype) {
+	if o == nil || IsNil(o.Voltype) {
 		var ret string
 		return ret
 	}
@@ -126,7 +126,7 @@ func (o *GetPolTokenForecastsRequest) GetVoltype() string {
 // GetVoltypeOk returns a tuple with the Voltype field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetVoltypeOk() (*string, bool) {
-	if o == nil || isNil(o.Voltype) {
+	if o == nil || IsNil(o.Voltype) {
 		return nil, false
 	}
 	return o.Voltype, true
@@ -134,7 +134,7 @@ func (o *GetPolTokenForecastsRequest) GetVoltypeOk() (*string, bool) {
 
 // HasVoltype returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasVoltype() bool {
-	if o != nil && !isNil(o.Voltype) {
+	if o != nil && !IsNil(o.Voltype) {
 		return true
 	}
 
@@ -148,7 +148,7 @@ func (o *GetPolTokenForecastsRequest) SetVoltype(v string) {
 
 // GetHorizon returns the Horizon field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetHorizon() int32 {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		var ret int32
 		return ret
 	}
@@ -158,7 +158,7 @@ func (o *GetPolTokenForecastsRequest) GetHorizon() int32 {
 // GetHorizonOk returns a tuple with the Horizon field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetHorizonOk() (*int32, bool) {
-	if o == nil || isNil(o.Horizon) {
+	if o == nil || IsNil(o.Horizon) {
 		return nil, false
 	}
 	return o.Horizon, true
@@ -166,7 +166,7 @@ func (o *GetPolTokenForecastsRequest) GetHorizonOk() (*int32, bool) {
 
 // HasHorizon returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasHorizon() bool {
-	if o != nil && !isNil(o.Horizon) {
+	if o != nil && !IsNil(o.Horizon) {
 		return true
 	}
 
@@ -180,7 +180,7 @@ func (o *GetPolTokenForecastsRequest) SetHorizon(v int32) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -190,7 +190,7 @@ func (o *GetPolTokenForecastsRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -198,7 +198,7 @@ func (o *GetPolTokenForecastsRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -212,7 +212,7 @@ func (o *GetPolTokenForecastsRequest) SetFrequency(v string) {
 
 // GetDist returns the Dist field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetDist() string {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		var ret string
 		return ret
 	}
@@ -222,7 +222,7 @@ func (o *GetPolTokenForecastsRequest) GetDist() string {
 // GetDistOk returns a tuple with the Dist field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetDistOk() (*string, bool) {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		return nil, false
 	}
 	return o.Dist, true
@@ -230,7 +230,7 @@ func (o *GetPolTokenForecastsRequest) GetDistOk() (*string, bool) {
 
 // HasDist returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasDist() bool {
-	if o != nil && !isNil(o.Dist) {
+	if o != nil && !IsNil(o.Dist) {
 		return true
 	}
 
@@ -244,7 +244,7 @@ func (o *GetPolTokenForecastsRequest) SetDist(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -254,7 +254,7 @@ func (o *GetPolTokenForecastsRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -262,7 +262,7 @@ func (o *GetPolTokenForecastsRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -276,7 +276,7 @@ func (o *GetPolTokenForecastsRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -286,7 +286,7 @@ func (o *GetPolTokenForecastsRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -294,7 +294,7 @@ func (o *GetPolTokenForecastsRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -308,7 +308,7 @@ func (o *GetPolTokenForecastsRequest) SetEndDate(v string) {
 
 // GetReturnPriceForecasts returns the ReturnPriceForecasts field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetReturnPriceForecasts() bool {
-	if o == nil || isNil(o.ReturnPriceForecasts) {
+	if o == nil || IsNil(o.ReturnPriceForecasts) {
 		var ret bool
 		return ret
 	}
@@ -318,7 +318,7 @@ func (o *GetPolTokenForecastsRequest) GetReturnPriceForecasts() bool {
 // GetReturnPriceForecastsOk returns a tuple with the ReturnPriceForecasts field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetReturnPriceForecastsOk() (*bool, bool) {
-	if o == nil || isNil(o.ReturnPriceForecasts) {
+	if o == nil || IsNil(o.ReturnPriceForecasts) {
 		return nil, false
 	}
 	return o.ReturnPriceForecasts, true
@@ -326,7 +326,7 @@ func (o *GetPolTokenForecastsRequest) GetReturnPriceForecastsOk() (*bool, bool) 
 
 // HasReturnPriceForecasts returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasReturnPriceForecasts() bool {
-	if o != nil && !isNil(o.ReturnPriceForecasts) {
+	if o != nil && !IsNil(o.ReturnPriceForecasts) {
 		return true
 	}
 
@@ -340,7 +340,7 @@ func (o *GetPolTokenForecastsRequest) SetReturnPriceForecasts(v bool) {
 
 // GetAlpha returns the Alpha field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetAlpha() float32 {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		var ret float32
 		return ret
 	}
@@ -350,7 +350,7 @@ func (o *GetPolTokenForecastsRequest) GetAlpha() float32 {
 // GetAlphaOk returns a tuple with the Alpha field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetAlphaOk() (*float32, bool) {
-	if o == nil || isNil(o.Alpha) {
+	if o == nil || IsNil(o.Alpha) {
 		return nil, false
 	}
 	return o.Alpha, true
@@ -358,7 +358,7 @@ func (o *GetPolTokenForecastsRequest) GetAlphaOk() (*float32, bool) {
 
 // HasAlpha returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasAlpha() bool {
-	if o != nil && !isNil(o.Alpha) {
+	if o != nil && !IsNil(o.Alpha) {
 		return true
 	}
 
@@ -372,7 +372,7 @@ func (o *GetPolTokenForecastsRequest) SetAlpha(v float32) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -382,7 +382,7 @@ func (o *GetPolTokenForecastsRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -390,7 +390,7 @@ func (o *GetPolTokenForecastsRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -404,7 +404,7 @@ func (o *GetPolTokenForecastsRequest) SetReptCurr(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -414,7 +414,7 @@ func (o *GetPolTokenForecastsRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -422,7 +422,7 @@ func (o *GetPolTokenForecastsRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -436,7 +436,7 @@ func (o *GetPolTokenForecastsRequest) SetExcludeWash(v bool) {
 
 // GetArchParams returns the ArchParams field value if set, zero value otherwise.
 func (o *GetPolTokenForecastsRequest) GetArchParams() GetEthCollectionForecastsRequestArchParams {
-	if o == nil || isNil(o.ArchParams) {
+	if o == nil || IsNil(o.ArchParams) {
 		var ret GetEthCollectionForecastsRequestArchParams
 		return ret
 	}
@@ -446,7 +446,7 @@ func (o *GetPolTokenForecastsRequest) GetArchParams() GetEthCollectionForecastsR
 // GetArchParamsOk returns a tuple with the ArchParams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolTokenForecastsRequest) GetArchParamsOk() (*GetEthCollectionForecastsRequestArchParams, bool) {
-	if o == nil || isNil(o.ArchParams) {
+	if o == nil || IsNil(o.ArchParams) {
 		return nil, false
 	}
 	return o.ArchParams, true
@@ -454,7 +454,7 @@ func (o *GetPolTokenForecastsRequest) GetArchParamsOk() (*GetEthCollectionForeca
 
 // HasArchParams returns a boolean if a field has been set.
 func (o *GetPolTokenForecastsRequest) HasArchParams() bool {
-	if o != nil && !isNil(o.ArchParams) {
+	if o != nil && !IsNil(o.ArchParams) {
 		return true
 	}
 
@@ -478,37 +478,37 @@ func (o GetPolTokenForecastsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["token_id"] = o.TokenId
-	if !isNil(o.Voltype) {
+	if !IsNil(o.Voltype) {
 		toSerialize["voltype"] = o.Voltype
 	}
-	if !isNil(o.Horizon) {
+	if !IsNil(o.Horizon) {
 		toSerialize["horizon"] = o.Horizon
 	}
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.Dist) {
+	if !IsNil(o.Dist) {
 		toSerialize["dist"] = o.Dist
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.ReturnPriceForecasts) {
+	if !IsNil(o.ReturnPriceForecasts) {
 		toSerialize["return_price_forecasts"] = o.ReturnPriceForecasts
 	}
-	if !isNil(o.Alpha) {
+	if !IsNil(o.Alpha) {
 		toSerialize["alpha"] = o.Alpha
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
-	if !isNil(o.ArchParams) {
+	if !IsNil(o.ArchParams) {
 		toSerialize["arch_params"] = o.ArchParams
 	}
 	return toSerialize, nil

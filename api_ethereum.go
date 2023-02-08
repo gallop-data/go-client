@@ -1453,6 +1453,116 @@ func (a *EthereumApiService) GetEthDefaultTokenRiskExecute(r ApiGetEthDefaultTok
 	return localVarHTTPResponse, nil
 }
 
+type ApiGetEthEnsLookupRequest struct {
+	ctx context.Context
+	ApiService *EthereumApiService
+	getEthEnsLookupRequest *GetEthEnsLookupRequest
+}
+
+func (r ApiGetEthEnsLookupRequest) GetEthEnsLookupRequest(getEthEnsLookupRequest GetEthEnsLookupRequest) ApiGetEthEnsLookupRequest {
+	r.getEthEnsLookupRequest = &getEthEnsLookupRequest
+	return r
+}
+
+func (r ApiGetEthEnsLookupRequest) Execute() (*http.Response, error) {
+	return r.ApiService.GetEthEnsLookupExecute(r)
+}
+
+/*
+GetEthEnsLookup ENS Lookup
+
+Returns Ethereum Name Service data for a given wallet address
+
+ @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ @return ApiGetEthEnsLookupRequest
+*/
+func (a *EthereumApiService) GetEthEnsLookup(ctx context.Context) ApiGetEthEnsLookupRequest {
+	return ApiGetEthEnsLookupRequest{
+		ApiService: a,
+		ctx: ctx,
+	}
+}
+
+// Execute executes the request
+func (a *EthereumApiService) GetEthEnsLookupExecute(r ApiGetEthEnsLookupRequest) (*http.Response, error) {
+	var (
+		localVarHTTPMethod   = http.MethodPost
+		localVarPostBody     interface{}
+		formFiles            []formFile
+	)
+
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "EthereumApiService.GetEthEnsLookup")
+	if err != nil {
+		return nil, &GenericOpenAPIError{error: err.Error()}
+	}
+
+	localVarPath := localBasePath + "/data/eth/getEnsLookup"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHTTPContentTypes := []string{"application/json"}
+
+	// set Content-Type header
+	localVarHTTPContentType := selectHeaderContentType(localVarHTTPContentTypes)
+	if localVarHTTPContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHTTPContentType
+	}
+
+	// to determine the Accept header
+	localVarHTTPHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHTTPHeaderAccept := selectHeaderAccept(localVarHTTPHeaderAccepts)
+	if localVarHTTPHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
+	}
+	// body params
+	localVarPostBody = r.getEthEnsLookupRequest
+	if r.ctx != nil {
+		// API Key Authentication
+		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
+			if apiKey, ok := auth["api_key"]; ok {
+				var key string
+				if apiKey.Prefix != "" {
+					key = apiKey.Prefix + " " + apiKey.Key
+				} else {
+					key = apiKey.Key
+				}
+				localVarHeaderParams["x-api-key"] = key
+			}
+		}
+	}
+	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
+	if err != nil {
+		return nil, err
+	}
+
+	localVarHTTPResponse, err := a.client.callAPI(req)
+	if err != nil || localVarHTTPResponse == nil {
+		return localVarHTTPResponse, err
+	}
+
+	localVarBody, err := io.ReadAll(localVarHTTPResponse.Body)
+	localVarHTTPResponse.Body.Close()
+	localVarHTTPResponse.Body = io.NopCloser(bytes.NewBuffer(localVarBody))
+	if err != nil {
+		return localVarHTTPResponse, err
+	}
+
+	if localVarHTTPResponse.StatusCode >= 300 {
+		newErr := &GenericOpenAPIError{
+			body:  localVarBody,
+			error: localVarHTTPResponse.Status,
+		}
+		return localVarHTTPResponse, newErr
+	}
+
+	return localVarHTTPResponse, nil
+}
+
 type ApiGetEthHistoricalEventsRequest struct {
 	ctx context.Context
 	ApiService *EthereumApiService

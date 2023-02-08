@@ -165,6 +165,17 @@ func Test_openapi_EthereumApiService(t *testing.T) {
 
 	})
 
+	t.Run("Test EthereumApiService GetEthEnsLookup", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.EthereumApi.GetEthEnsLookup(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test EthereumApiService GetEthHistoricalEvents", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test

@@ -51,7 +51,7 @@ func NewGetEthCustomCollectionRiskRequestGarParamsWithDefaults() *GetEthCustomCo
 
 // GetMean returns the Mean field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetMean() string {
-	if o == nil || isNil(o.Mean) {
+	if o == nil || IsNil(o.Mean) {
 		var ret string
 		return ret
 	}
@@ -61,7 +61,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetMean() string {
 // GetMeanOk returns a tuple with the Mean field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetMeanOk() (*string, bool) {
-	if o == nil || isNil(o.Mean) {
+	if o == nil || IsNil(o.Mean) {
 		return nil, false
 	}
 	return o.Mean, true
@@ -69,7 +69,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetMeanOk() (*string, bool)
 
 // HasMean returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) HasMean() bool {
-	if o != nil && !isNil(o.Mean) {
+	if o != nil && !IsNil(o.Mean) {
 		return true
 	}
 
@@ -83,7 +83,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) SetMean(v string) {
 
 // GetLags returns the Lags field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetLags() int32 {
-	if o == nil || isNil(o.Lags) {
+	if o == nil || IsNil(o.Lags) {
 		var ret int32
 		return ret
 	}
@@ -93,7 +93,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetLags() int32 {
 // GetLagsOk returns a tuple with the Lags field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetLagsOk() (*int32, bool) {
-	if o == nil || isNil(o.Lags) {
+	if o == nil || IsNil(o.Lags) {
 		return nil, false
 	}
 	return o.Lags, true
@@ -101,7 +101,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetLagsOk() (*int32, bool) 
 
 // HasLags returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) HasLags() bool {
-	if o != nil && !isNil(o.Lags) {
+	if o != nil && !IsNil(o.Lags) {
 		return true
 	}
 
@@ -115,7 +115,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) SetLags(v int32) {
 
 // GetVol returns the Vol field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetVol() string {
-	if o == nil || isNil(o.Vol) {
+	if o == nil || IsNil(o.Vol) {
 		var ret string
 		return ret
 	}
@@ -125,7 +125,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetVol() string {
 // GetVolOk returns a tuple with the Vol field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetVolOk() (*string, bool) {
-	if o == nil || isNil(o.Vol) {
+	if o == nil || IsNil(o.Vol) {
 		return nil, false
 	}
 	return o.Vol, true
@@ -133,7 +133,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetVolOk() (*string, bool) 
 
 // HasVol returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) HasVol() bool {
-	if o != nil && !isNil(o.Vol) {
+	if o != nil && !IsNil(o.Vol) {
 		return true
 	}
 
@@ -147,7 +147,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) SetVol(v string) {
 
 // GetP returns the P field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetP() int32 {
-	if o == nil || isNil(o.P) {
+	if o == nil || IsNil(o.P) {
 		var ret int32
 		return ret
 	}
@@ -157,7 +157,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetP() int32 {
 // GetPOk returns a tuple with the P field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetPOk() (*int32, bool) {
-	if o == nil || isNil(o.P) {
+	if o == nil || IsNil(o.P) {
 		return nil, false
 	}
 	return o.P, true
@@ -165,7 +165,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetPOk() (*int32, bool) {
 
 // HasP returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) HasP() bool {
-	if o != nil && !isNil(o.P) {
+	if o != nil && !IsNil(o.P) {
 		return true
 	}
 
@@ -179,7 +179,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) SetP(v int32) {
 
 // GetDist returns the Dist field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetDist() string {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		var ret string
 		return ret
 	}
@@ -189,7 +189,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetDist() string {
 // GetDistOk returns a tuple with the Dist field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) GetDistOk() (*string, bool) {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		return nil, false
 	}
 	return o.Dist, true
@@ -197,7 +197,7 @@ func (o *GetEthCustomCollectionRiskRequestGarParams) GetDistOk() (*string, bool)
 
 // HasDist returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestGarParams) HasDist() bool {
-	if o != nil && !isNil(o.Dist) {
+	if o != nil && !IsNil(o.Dist) {
 		return true
 	}
 
@@ -219,19 +219,19 @@ func (o GetEthCustomCollectionRiskRequestGarParams) MarshalJSON() ([]byte, error
 
 func (o GetEthCustomCollectionRiskRequestGarParams) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Mean) {
+	if !IsNil(o.Mean) {
 		toSerialize["mean"] = o.Mean
 	}
-	if !isNil(o.Lags) {
+	if !IsNil(o.Lags) {
 		toSerialize["lags"] = o.Lags
 	}
-	if !isNil(o.Vol) {
+	if !IsNil(o.Vol) {
 		toSerialize["vol"] = o.Vol
 	}
-	if !isNil(o.P) {
+	if !IsNil(o.P) {
 		toSerialize["p"] = o.P
 	}
-	if !isNil(o.Dist) {
+	if !IsNil(o.Dist) {
 		toSerialize["dist"] = o.Dist
 	}
 	return toSerialize, nil

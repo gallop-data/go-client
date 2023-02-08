@@ -43,7 +43,7 @@ func NewGetSolCollectionTraitsRequestWithDefaults() *GetSolCollectionTraitsReque
 
 // GetCollectionTag returns the CollectionTag field value if set, zero value otherwise.
 func (o *GetSolCollectionTraitsRequest) GetCollectionTag() string {
-	if o == nil || isNil(o.CollectionTag) {
+	if o == nil || IsNil(o.CollectionTag) {
 		var ret string
 		return ret
 	}
@@ -53,7 +53,7 @@ func (o *GetSolCollectionTraitsRequest) GetCollectionTag() string {
 // GetCollectionTagOk returns a tuple with the CollectionTag field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionTraitsRequest) GetCollectionTagOk() (*string, bool) {
-	if o == nil || isNil(o.CollectionTag) {
+	if o == nil || IsNil(o.CollectionTag) {
 		return nil, false
 	}
 	return o.CollectionTag, true
@@ -61,7 +61,7 @@ func (o *GetSolCollectionTraitsRequest) GetCollectionTagOk() (*string, bool) {
 
 // HasCollectionTag returns a boolean if a field has been set.
 func (o *GetSolCollectionTraitsRequest) HasCollectionTag() bool {
-	if o != nil && !isNil(o.CollectionTag) {
+	if o != nil && !IsNil(o.CollectionTag) {
 		return true
 	}
 
@@ -83,7 +83,7 @@ func (o GetSolCollectionTraitsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetSolCollectionTraitsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.CollectionTag) {
+	if !IsNil(o.CollectionTag) {
 		toSerialize["collection_tag"] = o.CollectionTag
 	}
 	return toSerialize, nil

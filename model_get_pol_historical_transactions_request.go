@@ -72,7 +72,7 @@ func (o *GetPolHistoricalTransactionsRequest) SetCollectionAddress(v string) {
 
 // GetTokenId returns the TokenId field value if set, zero value otherwise.
 func (o *GetPolHistoricalTransactionsRequest) GetTokenId() string {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		var ret string
 		return ret
 	}
@@ -82,7 +82,7 @@ func (o *GetPolHistoricalTransactionsRequest) GetTokenId() string {
 // GetTokenIdOk returns a tuple with the TokenId field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolHistoricalTransactionsRequest) GetTokenIdOk() (*string, bool) {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		return nil, false
 	}
 	return o.TokenId, true
@@ -90,7 +90,7 @@ func (o *GetPolHistoricalTransactionsRequest) GetTokenIdOk() (*string, bool) {
 
 // HasTokenId returns a boolean if a field has been set.
 func (o *GetPolHistoricalTransactionsRequest) HasTokenId() bool {
-	if o != nil && !isNil(o.TokenId) {
+	if o != nil && !IsNil(o.TokenId) {
 		return true
 	}
 
@@ -104,7 +104,7 @@ func (o *GetPolHistoricalTransactionsRequest) SetTokenId(v string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetPolHistoricalTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -114,7 +114,7 @@ func (o *GetPolHistoricalTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolHistoricalTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -122,7 +122,7 @@ func (o *GetPolHistoricalTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetPolHistoricalTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -145,10 +145,10 @@ func (o GetPolHistoricalTransactionsRequest) MarshalJSON() ([]byte, error) {
 func (o GetPolHistoricalTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.TokenId) {
+	if !IsNil(o.TokenId) {
 		toSerialize["token_id"] = o.TokenId
 	}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
 	return toSerialize, nil

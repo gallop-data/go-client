@@ -70,7 +70,7 @@ func (o *GetSolHistoricalTransactionsRequest) SetCollectionTag(v string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetSolHistoricalTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -80,7 +80,7 @@ func (o *GetSolHistoricalTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolHistoricalTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -88,7 +88,7 @@ func (o *GetSolHistoricalTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetSolHistoricalTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o GetSolHistoricalTransactionsRequest) MarshalJSON() ([]byte, error) {
 func (o GetSolHistoricalTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_tag"] = o.CollectionTag
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
 	return toSerialize, nil

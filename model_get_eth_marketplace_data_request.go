@@ -70,7 +70,7 @@ func (o *GetEthMarketplaceDataRequest) SetCollectionAddress(v []string) {
 
 // GetSubCollectionTags returns the SubCollectionTags field value if set, zero value otherwise.
 func (o *GetEthMarketplaceDataRequest) GetSubCollectionTags() []string {
-	if o == nil || isNil(o.SubCollectionTags) {
+	if o == nil || IsNil(o.SubCollectionTags) {
 		var ret []string
 		return ret
 	}
@@ -80,7 +80,7 @@ func (o *GetEthMarketplaceDataRequest) GetSubCollectionTags() []string {
 // GetSubCollectionTagsOk returns a tuple with the SubCollectionTags field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthMarketplaceDataRequest) GetSubCollectionTagsOk() ([]string, bool) {
-	if o == nil || isNil(o.SubCollectionTags) {
+	if o == nil || IsNil(o.SubCollectionTags) {
 		return nil, false
 	}
 	return o.SubCollectionTags, true
@@ -88,7 +88,7 @@ func (o *GetEthMarketplaceDataRequest) GetSubCollectionTagsOk() ([]string, bool)
 
 // HasSubCollectionTags returns a boolean if a field has been set.
 func (o *GetEthMarketplaceDataRequest) HasSubCollectionTags() bool {
-	if o != nil && !isNil(o.SubCollectionTags) {
+	if o != nil && !IsNil(o.SubCollectionTags) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o GetEthMarketplaceDataRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthMarketplaceDataRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.SubCollectionTags) {
+	if !IsNil(o.SubCollectionTags) {
 		toSerialize["sub_collection_tags"] = o.SubCollectionTags
 	}
 	return toSerialize, nil

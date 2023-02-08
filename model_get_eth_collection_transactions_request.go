@@ -78,7 +78,7 @@ func (o *GetEthCollectionTransactionsRequest) SetCollectionAddress(v string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetEthCollectionTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -88,7 +88,7 @@ func (o *GetEthCollectionTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -96,7 +96,7 @@ func (o *GetEthCollectionTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetEthCollectionTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -110,7 +110,7 @@ func (o *GetEthCollectionTransactionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetEthCollectionTransactionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -120,7 +120,7 @@ func (o *GetEthCollectionTransactionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionTransactionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -128,7 +128,7 @@ func (o *GetEthCollectionTransactionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetEthCollectionTransactionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -142,7 +142,7 @@ func (o *GetEthCollectionTransactionsRequest) SetPageSize(v int32) {
 
 // GetStartBlockNumber returns the StartBlockNumber field value if set, zero value otherwise.
 func (o *GetEthCollectionTransactionsRequest) GetStartBlockNumber() int32 {
-	if o == nil || isNil(o.StartBlockNumber) {
+	if o == nil || IsNil(o.StartBlockNumber) {
 		var ret int32
 		return ret
 	}
@@ -152,7 +152,7 @@ func (o *GetEthCollectionTransactionsRequest) GetStartBlockNumber() int32 {
 // GetStartBlockNumberOk returns a tuple with the StartBlockNumber field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionTransactionsRequest) GetStartBlockNumberOk() (*int32, bool) {
-	if o == nil || isNil(o.StartBlockNumber) {
+	if o == nil || IsNil(o.StartBlockNumber) {
 		return nil, false
 	}
 	return o.StartBlockNumber, true
@@ -160,7 +160,7 @@ func (o *GetEthCollectionTransactionsRequest) GetStartBlockNumberOk() (*int32, b
 
 // HasStartBlockNumber returns a boolean if a field has been set.
 func (o *GetEthCollectionTransactionsRequest) HasStartBlockNumber() bool {
-	if o != nil && !isNil(o.StartBlockNumber) {
+	if o != nil && !IsNil(o.StartBlockNumber) {
 		return true
 	}
 
@@ -174,7 +174,7 @@ func (o *GetEthCollectionTransactionsRequest) SetStartBlockNumber(v int32) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetEthCollectionTransactionsRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -184,7 +184,7 @@ func (o *GetEthCollectionTransactionsRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionTransactionsRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -192,7 +192,7 @@ func (o *GetEthCollectionTransactionsRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetEthCollectionTransactionsRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -206,7 +206,7 @@ func (o *GetEthCollectionTransactionsRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetEthCollectionTransactionsRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -216,7 +216,7 @@ func (o *GetEthCollectionTransactionsRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionTransactionsRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -224,7 +224,7 @@ func (o *GetEthCollectionTransactionsRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetEthCollectionTransactionsRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -247,19 +247,19 @@ func (o GetEthCollectionTransactionsRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthCollectionTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.StartBlockNumber) {
+	if !IsNil(o.StartBlockNumber) {
 		toSerialize["start_block_number"] = o.StartBlockNumber
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
 	return toSerialize, nil

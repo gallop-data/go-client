@@ -84,7 +84,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetCollectionAddress(v string) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -94,7 +94,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -102,7 +102,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -116,7 +116,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetFrequency(v string) {
 
 // GetGroupBy returns the GroupBy field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetGroupBy() string {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		var ret string
 		return ret
 	}
@@ -126,7 +126,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetGroupBy() string {
 // GetGroupByOk returns a tuple with the GroupBy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetGroupByOk() (*string, bool) {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		return nil, false
 	}
 	return o.GroupBy, true
@@ -134,7 +134,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetGroupByOk() (*string, bool) {
 
 // HasGroupBy returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasGroupBy() bool {
-	if o != nil && !isNil(o.GroupBy) {
+	if o != nil && !IsNil(o.GroupBy) {
 		return true
 	}
 
@@ -148,7 +148,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetGroupBy(v string) {
 
 // GetVolume returns the Volume field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetVolume() bool {
-	if o == nil || isNil(o.Volume) {
+	if o == nil || IsNil(o.Volume) {
 		var ret bool
 		return ret
 	}
@@ -158,7 +158,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetVolume() bool {
 // GetVolumeOk returns a tuple with the Volume field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetVolumeOk() (*bool, bool) {
-	if o == nil || isNil(o.Volume) {
+	if o == nil || IsNil(o.Volume) {
 		return nil, false
 	}
 	return o.Volume, true
@@ -166,7 +166,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetVolumeOk() (*bool, bool) {
 
 // HasVolume returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasVolume() bool {
-	if o != nil && !isNil(o.Volume) {
+	if o != nil && !IsNil(o.Volume) {
 		return true
 	}
 
@@ -180,7 +180,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetVolume(v bool) {
 
 // GetNTrades returns the NTrades field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetNTrades() bool {
-	if o == nil || isNil(o.NTrades) {
+	if o == nil || IsNil(o.NTrades) {
 		var ret bool
 		return ret
 	}
@@ -190,7 +190,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetNTrades() bool {
 // GetNTradesOk returns a tuple with the NTrades field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetNTradesOk() (*bool, bool) {
-	if o == nil || isNil(o.NTrades) {
+	if o == nil || IsNil(o.NTrades) {
 		return nil, false
 	}
 	return o.NTrades, true
@@ -198,7 +198,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetNTradesOk() (*bool, bool) {
 
 // HasNTrades returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasNTrades() bool {
-	if o != nil && !isNil(o.NTrades) {
+	if o != nil && !IsNil(o.NTrades) {
 		return true
 	}
 
@@ -212,7 +212,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetNTrades(v bool) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -222,7 +222,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -230,7 +230,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -244,7 +244,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetReptCurr(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -254,7 +254,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -262,7 +262,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -276,7 +276,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -286,7 +286,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -294,7 +294,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -308,7 +308,7 @@ func (o *GetPolCollectionSalesOHLCRequest) SetEndDate(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetPolCollectionSalesOHLCRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -318,7 +318,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionSalesOHLCRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -326,7 +326,7 @@ func (o *GetPolCollectionSalesOHLCRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetPolCollectionSalesOHLCRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -349,28 +349,28 @@ func (o GetPolCollectionSalesOHLCRequest) MarshalJSON() ([]byte, error) {
 func (o GetPolCollectionSalesOHLCRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.GroupBy) {
+	if !IsNil(o.GroupBy) {
 		toSerialize["group_by"] = o.GroupBy
 	}
-	if !isNil(o.Volume) {
+	if !IsNil(o.Volume) {
 		toSerialize["volume"] = o.Volume
 	}
-	if !isNil(o.NTrades) {
+	if !IsNil(o.NTrades) {
 		toSerialize["n_trades"] = o.NTrades
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
 	return toSerialize, nil

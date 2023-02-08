@@ -1145,6 +1145,51 @@ paths:
       summary: Marketplace Floor Price by Collection
       tags:
       - Ethereum
+  /data/eth/getEnsLookup:
+    post:
+      description: Returns Ethereum Name Service data for a given wallet address
+      operationId: getEthEnsLookup
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getEthEnsLookup_request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                status: 200
+                response:
+                  total_items: 3
+                  total_pages: 1
+                  page: 1
+                  lookup:
+                  - ens_name: cindygallop.eth
+                    resolved_wallet_address: 0x03c609ad0c5f4d2b4b45329c879d01627ed044cf
+                    ens_nft_owner: 0x03c609ad0c5f4d2b4b45329c879d01627ed044cf
+                    ens_nft_token_id: "15517810867275400792454974873230676112786452149196343826542998772289206021344"
+                    on_chain_metadata: null
+                  - ens_name: cybergallops.eth
+                    resolved_wallet_address: 0xba2948f1fa6d88dac687f1ca8292a80c97001c88
+                    ens_nft_owner: 0xba2948f1fa6d88dac687f1ca8292a80c97001c88
+                    ens_nft_token_id: "8916934475999199779246118723595166231735896975510756527098834487350471780471"
+                    on_chain_metadata: null
+                  - ens_name: gallop.eth
+                    resolved_wallet_address: 0xe68e8cc7ff772b026c062b9cc28246676d044947
+                    ens_nft_owner: 0x7c76b0b0b6a5144d48c7ae23f5d91712cb8354b4
+                    ens_nft_token_id: "57055706468227773033118122077897942881246437083110876111525719177787586052276"
+                    on_chain_metadata: null
+          description: OK
+        "400":
+          description: Bad request
+        "403":
+          description: Unauthorized
+      security:
+      - api_key: []
+      summary: ENS Lookup
+      tags:
+      - Ethereum
   /data/sol/getCollections:
     post:
       description: Returns all Gallop aggregated collections
@@ -8184,6 +8229,30 @@ components:
           enum:
           - norm
           - t
+          type: string
+      type: object
+    getEthEnsLookup_request:
+      properties:
+        page:
+          description: The pagination cursor.
+          example: 1
+          type: integer
+        page_size:
+          description: The number of records returned per page.
+          enum:
+          - 50
+          - 100
+          - 500
+          - 1000
+          example: 100
+          type: integer
+        wallet_address:
+          description: The wallet address to query.
+          example: 0xd8da6bf26964af9d7eed9e03e53415d37aa96045
+          type: string
+        name:
+          description: The name to query.
+          example: gallop
           type: string
       type: object
     getSolCustomCollectionRisk_request:

@@ -47,7 +47,7 @@ func NewGetEthWalletTransactionsRequestWithDefaults() *GetEthWalletTransactionsR
 
 // GetWalletAddress returns the WalletAddress field value if set, zero value otherwise.
 func (o *GetEthWalletTransactionsRequest) GetWalletAddress() string {
-	if o == nil || isNil(o.WalletAddress) {
+	if o == nil || IsNil(o.WalletAddress) {
 		var ret string
 		return ret
 	}
@@ -57,7 +57,7 @@ func (o *GetEthWalletTransactionsRequest) GetWalletAddress() string {
 // GetWalletAddressOk returns a tuple with the WalletAddress field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthWalletTransactionsRequest) GetWalletAddressOk() (*string, bool) {
-	if o == nil || isNil(o.WalletAddress) {
+	if o == nil || IsNil(o.WalletAddress) {
 		return nil, false
 	}
 	return o.WalletAddress, true
@@ -65,7 +65,7 @@ func (o *GetEthWalletTransactionsRequest) GetWalletAddressOk() (*string, bool) {
 
 // HasWalletAddress returns a boolean if a field has been set.
 func (o *GetEthWalletTransactionsRequest) HasWalletAddress() bool {
-	if o != nil && !isNil(o.WalletAddress) {
+	if o != nil && !IsNil(o.WalletAddress) {
 		return true
 	}
 
@@ -79,7 +79,7 @@ func (o *GetEthWalletTransactionsRequest) SetWalletAddress(v string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetEthWalletTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -89,7 +89,7 @@ func (o *GetEthWalletTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthWalletTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -97,7 +97,7 @@ func (o *GetEthWalletTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetEthWalletTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -111,7 +111,7 @@ func (o *GetEthWalletTransactionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetEthWalletTransactionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -121,7 +121,7 @@ func (o *GetEthWalletTransactionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthWalletTransactionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -129,7 +129,7 @@ func (o *GetEthWalletTransactionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetEthWalletTransactionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -151,13 +151,13 @@ func (o GetEthWalletTransactionsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetEthWalletTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.WalletAddress) {
+	if !IsNil(o.WalletAddress) {
 		toSerialize["wallet_address"] = o.WalletAddress
 	}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
 	return toSerialize, nil

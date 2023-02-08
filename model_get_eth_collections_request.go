@@ -53,7 +53,7 @@ func NewGetEthCollectionsRequestWithDefaults() *GetEthCollectionsRequest {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -63,7 +63,7 @@ func (o *GetEthCollectionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -71,7 +71,7 @@ func (o *GetEthCollectionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -85,7 +85,7 @@ func (o *GetEthCollectionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -95,7 +95,7 @@ func (o *GetEthCollectionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -103,7 +103,7 @@ func (o *GetEthCollectionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -117,7 +117,7 @@ func (o *GetEthCollectionsRequest) SetPageSize(v int32) {
 
 // GetCollectionName returns the CollectionName field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetCollectionName() string {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		var ret string
 		return ret
 	}
@@ -127,7 +127,7 @@ func (o *GetEthCollectionsRequest) GetCollectionName() string {
 // GetCollectionNameOk returns a tuple with the CollectionName field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetCollectionNameOk() (*string, bool) {
-	if o == nil || isNil(o.CollectionName) {
+	if o == nil || IsNil(o.CollectionName) {
 		return nil, false
 	}
 	return o.CollectionName, true
@@ -135,7 +135,7 @@ func (o *GetEthCollectionsRequest) GetCollectionNameOk() (*string, bool) {
 
 // HasCollectionName returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasCollectionName() bool {
-	if o != nil && !isNil(o.CollectionName) {
+	if o != nil && !IsNil(o.CollectionName) {
 		return true
 	}
 
@@ -149,7 +149,7 @@ func (o *GetEthCollectionsRequest) SetCollectionName(v string) {
 
 // GetTraded returns the Traded field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetTraded() bool {
-	if o == nil || isNil(o.Traded) {
+	if o == nil || IsNil(o.Traded) {
 		var ret bool
 		return ret
 	}
@@ -159,7 +159,7 @@ func (o *GetEthCollectionsRequest) GetTraded() bool {
 // GetTradedOk returns a tuple with the Traded field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetTradedOk() (*bool, bool) {
-	if o == nil || isNil(o.Traded) {
+	if o == nil || IsNil(o.Traded) {
 		return nil, false
 	}
 	return o.Traded, true
@@ -167,7 +167,7 @@ func (o *GetEthCollectionsRequest) GetTradedOk() (*bool, bool) {
 
 // HasTraded returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasTraded() bool {
-	if o != nil && !isNil(o.Traded) {
+	if o != nil && !IsNil(o.Traded) {
 		return true
 	}
 
@@ -181,7 +181,7 @@ func (o *GetEthCollectionsRequest) SetTraded(v bool) {
 
 // GetCreatedAfter returns the CreatedAfter field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetCreatedAfter() string {
-	if o == nil || isNil(o.CreatedAfter) {
+	if o == nil || IsNil(o.CreatedAfter) {
 		var ret string
 		return ret
 	}
@@ -191,7 +191,7 @@ func (o *GetEthCollectionsRequest) GetCreatedAfter() string {
 // GetCreatedAfterOk returns a tuple with the CreatedAfter field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetCreatedAfterOk() (*string, bool) {
-	if o == nil || isNil(o.CreatedAfter) {
+	if o == nil || IsNil(o.CreatedAfter) {
 		return nil, false
 	}
 	return o.CreatedAfter, true
@@ -199,7 +199,7 @@ func (o *GetEthCollectionsRequest) GetCreatedAfterOk() (*string, bool) {
 
 // HasCreatedAfter returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasCreatedAfter() bool {
-	if o != nil && !isNil(o.CreatedAfter) {
+	if o != nil && !IsNil(o.CreatedAfter) {
 		return true
 	}
 
@@ -213,7 +213,7 @@ func (o *GetEthCollectionsRequest) SetCreatedAfter(v string) {
 
 // GetSortBy returns the SortBy field value if set, zero value otherwise.
 func (o *GetEthCollectionsRequest) GetSortBy() string {
-	if o == nil || isNil(o.SortBy) {
+	if o == nil || IsNil(o.SortBy) {
 		var ret string
 		return ret
 	}
@@ -223,7 +223,7 @@ func (o *GetEthCollectionsRequest) GetSortBy() string {
 // GetSortByOk returns a tuple with the SortBy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionsRequest) GetSortByOk() (*string, bool) {
-	if o == nil || isNil(o.SortBy) {
+	if o == nil || IsNil(o.SortBy) {
 		return nil, false
 	}
 	return o.SortBy, true
@@ -231,7 +231,7 @@ func (o *GetEthCollectionsRequest) GetSortByOk() (*string, bool) {
 
 // HasSortBy returns a boolean if a field has been set.
 func (o *GetEthCollectionsRequest) HasSortBy() bool {
-	if o != nil && !isNil(o.SortBy) {
+	if o != nil && !IsNil(o.SortBy) {
 		return true
 	}
 
@@ -253,22 +253,22 @@ func (o GetEthCollectionsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetEthCollectionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
-	if !isNil(o.CollectionName) {
+	if !IsNil(o.CollectionName) {
 		toSerialize["collection_name"] = o.CollectionName
 	}
-	if !isNil(o.Traded) {
+	if !IsNil(o.Traded) {
 		toSerialize["traded"] = o.Traded
 	}
-	if !isNil(o.CreatedAfter) {
+	if !IsNil(o.CreatedAfter) {
 		toSerialize["created_after"] = o.CreatedAfter
 	}
-	if !isNil(o.SortBy) {
+	if !IsNil(o.SortBy) {
 		toSerialize["sort_by"] = o.SortBy
 	}
 	return toSerialize, nil

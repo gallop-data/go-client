@@ -126,7 +126,7 @@ func (o *GetEthDefaultTokenRiskRequest) SetHoldingPeriod(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetEthDefaultTokenRiskRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -136,7 +136,7 @@ func (o *GetEthDefaultTokenRiskRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthDefaultTokenRiskRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -144,7 +144,7 @@ func (o *GetEthDefaultTokenRiskRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetEthDefaultTokenRiskRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -158,7 +158,7 @@ func (o *GetEthDefaultTokenRiskRequest) SetReptCurr(v string) {
 
 // GetDrawdown returns the Drawdown field value if set, zero value otherwise.
 func (o *GetEthDefaultTokenRiskRequest) GetDrawdown() bool {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		var ret bool
 		return ret
 	}
@@ -168,7 +168,7 @@ func (o *GetEthDefaultTokenRiskRequest) GetDrawdown() bool {
 // GetDrawdownOk returns a tuple with the Drawdown field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthDefaultTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		return nil, false
 	}
 	return o.Drawdown, true
@@ -176,7 +176,7 @@ func (o *GetEthDefaultTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
 
 // HasDrawdown returns a boolean if a field has been set.
 func (o *GetEthDefaultTokenRiskRequest) HasDrawdown() bool {
-	if o != nil && !isNil(o.Drawdown) {
+	if o != nil && !IsNil(o.Drawdown) {
 		return true
 	}
 
@@ -201,10 +201,10 @@ func (o GetEthDefaultTokenRiskRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize["collection_address"] = o.CollectionAddress
 	toSerialize["token_id"] = o.TokenId
 	toSerialize["holding_period"] = o.HoldingPeriod
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.Drawdown) {
+	if !IsNil(o.Drawdown) {
 		toSerialize["drawdown"] = o.Drawdown
 	}
 	return toSerialize, nil

@@ -90,6 +90,7 @@ Class | Method | HTTP request | Description
 *EthereumApi* | [**GetEthCustomTokenRisk**](docs/EthereumApi.md#getethcustomtokenrisk) | **Post** /insights/eth/getCustomTokenRisk | Custom Volatility &amp; Risk Metrics by Token
 *EthereumApi* | [**GetEthDefaultCollectionRisk**](docs/EthereumApi.md#getethdefaultcollectionrisk) | **Post** /insights/eth/getDefaultCollectionRisk | Default Volatility &amp; Risk Metrics by Collection
 *EthereumApi* | [**GetEthDefaultTokenRisk**](docs/EthereumApi.md#getethdefaulttokenrisk) | **Post** /insights/eth/getDefaultTokenRisk | Default Volatility &amp; Risk Metrics by Token
+*EthereumApi* | [**GetEthEnsLookup**](docs/EthereumApi.md#getethenslookup) | **Post** /data/eth/getEnsLookup | ENS Lookup
 *EthereumApi* | [**GetEthHistoricalEvents**](docs/EthereumApi.md#getethhistoricalevents) | **Post** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 *EthereumApi* | [**GetEthHistoricalTransactions**](docs/EthereumApi.md#getethhistoricaltransactions) | **Post** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 *EthereumApi* | [**GetEthLeaderBoard**](docs/EthereumApi.md#getethleaderboard) | **Post** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
@@ -182,6 +183,7 @@ Class | Method | HTTP request | Description
  - [GetEthCustomTokenRiskRequest](docs/GetEthCustomTokenRiskRequest.md)
  - [GetEthDefaultCollectionRiskRequest](docs/GetEthDefaultCollectionRiskRequest.md)
  - [GetEthDefaultTokenRiskRequest](docs/GetEthDefaultTokenRiskRequest.md)
+ - [GetEthEnsLookupRequest](docs/GetEthEnsLookupRequest.md)
  - [GetEthHistoricalEventsRequest](docs/GetEthHistoricalEventsRequest.md)
  - [GetEthHistoricalTransactionsRequest](docs/GetEthHistoricalTransactionsRequest.md)
  - [GetEthLeaderBoardRequest](docs/GetEthLeaderBoardRequest.md)

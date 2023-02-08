@@ -43,7 +43,7 @@ func NewGetPolCollectionTraitsRequestWithDefaults() *GetPolCollectionTraitsReque
 
 // GetCollectionAddress returns the CollectionAddress field value if set, zero value otherwise.
 func (o *GetPolCollectionTraitsRequest) GetCollectionAddress() string {
-	if o == nil || isNil(o.CollectionAddress) {
+	if o == nil || IsNil(o.CollectionAddress) {
 		var ret string
 		return ret
 	}
@@ -53,7 +53,7 @@ func (o *GetPolCollectionTraitsRequest) GetCollectionAddress() string {
 // GetCollectionAddressOk returns a tuple with the CollectionAddress field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolCollectionTraitsRequest) GetCollectionAddressOk() (*string, bool) {
-	if o == nil || isNil(o.CollectionAddress) {
+	if o == nil || IsNil(o.CollectionAddress) {
 		return nil, false
 	}
 	return o.CollectionAddress, true
@@ -61,7 +61,7 @@ func (o *GetPolCollectionTraitsRequest) GetCollectionAddressOk() (*string, bool)
 
 // HasCollectionAddress returns a boolean if a field has been set.
 func (o *GetPolCollectionTraitsRequest) HasCollectionAddress() bool {
-	if o != nil && !isNil(o.CollectionAddress) {
+	if o != nil && !IsNil(o.CollectionAddress) {
 		return true
 	}
 
@@ -83,7 +83,7 @@ func (o GetPolCollectionTraitsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetPolCollectionTraitsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.CollectionAddress) {
+	if !IsNil(o.CollectionAddress) {
 		toSerialize["collection_address"] = o.CollectionAddress
 	}
 	return toSerialize, nil

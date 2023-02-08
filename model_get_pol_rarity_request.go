@@ -72,7 +72,7 @@ func (o *GetPolRarityRequest) SetCollectionAddress(v string) {
 
 // GetWeights returns the Weights field value if set, zero value otherwise.
 func (o *GetPolRarityRequest) GetWeights() map[string]interface{} {
-	if o == nil || isNil(o.Weights) {
+	if o == nil || IsNil(o.Weights) {
 		var ret map[string]interface{}
 		return ret
 	}
@@ -82,7 +82,7 @@ func (o *GetPolRarityRequest) GetWeights() map[string]interface{} {
 // GetWeightsOk returns a tuple with the Weights field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolRarityRequest) GetWeightsOk() (map[string]interface{}, bool) {
-	if o == nil || isNil(o.Weights) {
+	if o == nil || IsNil(o.Weights) {
 		return map[string]interface{}{}, false
 	}
 	return o.Weights, true
@@ -90,7 +90,7 @@ func (o *GetPolRarityRequest) GetWeightsOk() (map[string]interface{}, bool) {
 
 // HasWeights returns a boolean if a field has been set.
 func (o *GetPolRarityRequest) HasWeights() bool {
-	if o != nil && !isNil(o.Weights) {
+	if o != nil && !IsNil(o.Weights) {
 		return true
 	}
 
@@ -104,7 +104,7 @@ func (o *GetPolRarityRequest) SetWeights(v map[string]interface{}) {
 
 // GetTokenId returns the TokenId field value if set, zero value otherwise.
 func (o *GetPolRarityRequest) GetTokenId() []string {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		var ret []string
 		return ret
 	}
@@ -114,7 +114,7 @@ func (o *GetPolRarityRequest) GetTokenId() []string {
 // GetTokenIdOk returns a tuple with the TokenId field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetPolRarityRequest) GetTokenIdOk() ([]string, bool) {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		return nil, false
 	}
 	return o.TokenId, true
@@ -122,7 +122,7 @@ func (o *GetPolRarityRequest) GetTokenIdOk() ([]string, bool) {
 
 // HasTokenId returns a boolean if a field has been set.
 func (o *GetPolRarityRequest) HasTokenId() bool {
-	if o != nil && !isNil(o.TokenId) {
+	if o != nil && !IsNil(o.TokenId) {
 		return true
 	}
 
@@ -145,10 +145,10 @@ func (o GetPolRarityRequest) MarshalJSON() ([]byte, error) {
 func (o GetPolRarityRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Weights) {
+	if !IsNil(o.Weights) {
 		toSerialize["weights"] = o.Weights
 	}
-	if !isNil(o.TokenId) {
+	if !IsNil(o.TokenId) {
 		toSerialize["token_id"] = o.TokenId
 	}
 	return toSerialize, nil

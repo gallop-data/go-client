@@ -74,7 +74,7 @@ func (o *GetSolWashTransactionsRequest) SetCollectionTag(v string) {
 
 // GetMintAddress returns the MintAddress field value if set, zero value otherwise.
 func (o *GetSolWashTransactionsRequest) GetMintAddress() []string {
-	if o == nil || isNil(o.MintAddress) {
+	if o == nil || IsNil(o.MintAddress) {
 		var ret []string
 		return ret
 	}
@@ -84,7 +84,7 @@ func (o *GetSolWashTransactionsRequest) GetMintAddress() []string {
 // GetMintAddressOk returns a tuple with the MintAddress field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolWashTransactionsRequest) GetMintAddressOk() ([]string, bool) {
-	if o == nil || isNil(o.MintAddress) {
+	if o == nil || IsNil(o.MintAddress) {
 		return nil, false
 	}
 	return o.MintAddress, true
@@ -92,7 +92,7 @@ func (o *GetSolWashTransactionsRequest) GetMintAddressOk() ([]string, bool) {
 
 // HasMintAddress returns a boolean if a field has been set.
 func (o *GetSolWashTransactionsRequest) HasMintAddress() bool {
-	if o != nil && !isNil(o.MintAddress) {
+	if o != nil && !IsNil(o.MintAddress) {
 		return true
 	}
 
@@ -106,7 +106,7 @@ func (o *GetSolWashTransactionsRequest) SetMintAddress(v []string) {
 
 // GetPage returns the Page field value if set, zero value otherwise.
 func (o *GetSolWashTransactionsRequest) GetPage() int32 {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		var ret int32
 		return ret
 	}
@@ -116,7 +116,7 @@ func (o *GetSolWashTransactionsRequest) GetPage() int32 {
 // GetPageOk returns a tuple with the Page field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolWashTransactionsRequest) GetPageOk() (*int32, bool) {
-	if o == nil || isNil(o.Page) {
+	if o == nil || IsNil(o.Page) {
 		return nil, false
 	}
 	return o.Page, true
@@ -124,7 +124,7 @@ func (o *GetSolWashTransactionsRequest) GetPageOk() (*int32, bool) {
 
 // HasPage returns a boolean if a field has been set.
 func (o *GetSolWashTransactionsRequest) HasPage() bool {
-	if o != nil && !isNil(o.Page) {
+	if o != nil && !IsNil(o.Page) {
 		return true
 	}
 
@@ -138,7 +138,7 @@ func (o *GetSolWashTransactionsRequest) SetPage(v int32) {
 
 // GetPageSize returns the PageSize field value if set, zero value otherwise.
 func (o *GetSolWashTransactionsRequest) GetPageSize() int32 {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		var ret int32
 		return ret
 	}
@@ -148,7 +148,7 @@ func (o *GetSolWashTransactionsRequest) GetPageSize() int32 {
 // GetPageSizeOk returns a tuple with the PageSize field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolWashTransactionsRequest) GetPageSizeOk() (*int32, bool) {
-	if o == nil || isNil(o.PageSize) {
+	if o == nil || IsNil(o.PageSize) {
 		return nil, false
 	}
 	return o.PageSize, true
@@ -156,7 +156,7 @@ func (o *GetSolWashTransactionsRequest) GetPageSizeOk() (*int32, bool) {
 
 // HasPageSize returns a boolean if a field has been set.
 func (o *GetSolWashTransactionsRequest) HasPageSize() bool {
-	if o != nil && !isNil(o.PageSize) {
+	if o != nil && !IsNil(o.PageSize) {
 		return true
 	}
 
@@ -179,13 +179,13 @@ func (o GetSolWashTransactionsRequest) MarshalJSON() ([]byte, error) {
 func (o GetSolWashTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_tag"] = o.CollectionTag
-	if !isNil(o.MintAddress) {
+	if !IsNil(o.MintAddress) {
 		toSerialize["mint_address"] = o.MintAddress
 	}
-	if !isNil(o.Page) {
+	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}
-	if !isNil(o.PageSize) {
+	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
 	}
 	return toSerialize, nil

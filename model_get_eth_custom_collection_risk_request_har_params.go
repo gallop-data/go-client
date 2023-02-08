@@ -53,7 +53,7 @@ func NewGetEthCustomCollectionRiskRequestHarParamsWithDefaults() *GetEthCustomCo
 
 // GetMean returns the Mean field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetMean() string {
-	if o == nil || isNil(o.Mean) {
+	if o == nil || IsNil(o.Mean) {
 		var ret string
 		return ret
 	}
@@ -63,7 +63,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetMean() string {
 // GetMeanOk returns a tuple with the Mean field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetMeanOk() (*string, bool) {
-	if o == nil || isNil(o.Mean) {
+	if o == nil || IsNil(o.Mean) {
 		return nil, false
 	}
 	return o.Mean, true
@@ -71,7 +71,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetMeanOk() (*string, bool)
 
 // HasMean returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasMean() bool {
-	if o != nil && !isNil(o.Mean) {
+	if o != nil && !IsNil(o.Mean) {
 		return true
 	}
 
@@ -85,7 +85,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) SetMean(v string) {
 
 // GetLags returns the Lags field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetLags() int32 {
-	if o == nil || isNil(o.Lags) {
+	if o == nil || IsNil(o.Lags) {
 		var ret int32
 		return ret
 	}
@@ -95,7 +95,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetLags() int32 {
 // GetLagsOk returns a tuple with the Lags field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetLagsOk() (*int32, bool) {
-	if o == nil || isNil(o.Lags) {
+	if o == nil || IsNil(o.Lags) {
 		return nil, false
 	}
 	return o.Lags, true
@@ -103,7 +103,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetLagsOk() (*int32, bool) 
 
 // HasLags returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasLags() bool {
-	if o != nil && !isNil(o.Lags) {
+	if o != nil && !IsNil(o.Lags) {
 		return true
 	}
 
@@ -117,7 +117,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) SetLags(v int32) {
 
 // GetVol returns the Vol field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetVol() string {
-	if o == nil || isNil(o.Vol) {
+	if o == nil || IsNil(o.Vol) {
 		var ret string
 		return ret
 	}
@@ -127,7 +127,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetVol() string {
 // GetVolOk returns a tuple with the Vol field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetVolOk() (*string, bool) {
-	if o == nil || isNil(o.Vol) {
+	if o == nil || IsNil(o.Vol) {
 		return nil, false
 	}
 	return o.Vol, true
@@ -135,7 +135,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetVolOk() (*string, bool) 
 
 // HasVol returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasVol() bool {
-	if o != nil && !isNil(o.Vol) {
+	if o != nil && !IsNil(o.Vol) {
 		return true
 	}
 
@@ -149,7 +149,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) SetVol(v string) {
 
 // GetP returns the P field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetP() []int32 {
-	if o == nil || isNil(o.P) {
+	if o == nil || IsNil(o.P) {
 		var ret []int32
 		return ret
 	}
@@ -159,7 +159,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetP() []int32 {
 // GetPOk returns a tuple with the P field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetPOk() ([]int32, bool) {
-	if o == nil || isNil(o.P) {
+	if o == nil || IsNil(o.P) {
 		return nil, false
 	}
 	return o.P, true
@@ -167,7 +167,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetPOk() ([]int32, bool) {
 
 // HasP returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasP() bool {
-	if o != nil && !isNil(o.P) {
+	if o != nil && !IsNil(o.P) {
 		return true
 	}
 
@@ -181,7 +181,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) SetP(v []int32) {
 
 // GetQ returns the Q field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetQ() int32 {
-	if o == nil || isNil(o.Q) {
+	if o == nil || IsNil(o.Q) {
 		var ret int32
 		return ret
 	}
@@ -191,7 +191,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetQ() int32 {
 // GetQOk returns a tuple with the Q field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetQOk() (*int32, bool) {
-	if o == nil || isNil(o.Q) {
+	if o == nil || IsNil(o.Q) {
 		return nil, false
 	}
 	return o.Q, true
@@ -199,7 +199,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetQOk() (*int32, bool) {
 
 // HasQ returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasQ() bool {
-	if o != nil && !isNil(o.Q) {
+	if o != nil && !IsNil(o.Q) {
 		return true
 	}
 
@@ -213,7 +213,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) SetQ(v int32) {
 
 // GetDist returns the Dist field value if set, zero value otherwise.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetDist() string {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		var ret string
 		return ret
 	}
@@ -223,7 +223,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetDist() string {
 // GetDistOk returns a tuple with the Dist field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) GetDistOk() (*string, bool) {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		return nil, false
 	}
 	return o.Dist, true
@@ -231,7 +231,7 @@ func (o *GetEthCustomCollectionRiskRequestHarParams) GetDistOk() (*string, bool)
 
 // HasDist returns a boolean if a field has been set.
 func (o *GetEthCustomCollectionRiskRequestHarParams) HasDist() bool {
-	if o != nil && !isNil(o.Dist) {
+	if o != nil && !IsNil(o.Dist) {
 		return true
 	}
 
@@ -253,22 +253,22 @@ func (o GetEthCustomCollectionRiskRequestHarParams) MarshalJSON() ([]byte, error
 
 func (o GetEthCustomCollectionRiskRequestHarParams) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !isNil(o.Mean) {
+	if !IsNil(o.Mean) {
 		toSerialize["mean"] = o.Mean
 	}
-	if !isNil(o.Lags) {
+	if !IsNil(o.Lags) {
 		toSerialize["lags"] = o.Lags
 	}
-	if !isNil(o.Vol) {
+	if !IsNil(o.Vol) {
 		toSerialize["vol"] = o.Vol
 	}
-	if !isNil(o.P) {
+	if !IsNil(o.P) {
 		toSerialize["p"] = o.P
 	}
-	if !isNil(o.Q) {
+	if !IsNil(o.Q) {
 		toSerialize["q"] = o.Q
 	}
-	if !isNil(o.Dist) {
+	if !IsNil(o.Dist) {
 		toSerialize["dist"] = o.Dist
 	}
 	return toSerialize, nil

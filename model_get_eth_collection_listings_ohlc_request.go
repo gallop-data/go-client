@@ -80,7 +80,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetCollectionAddress(v string) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -90,7 +90,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -98,7 +98,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -112,7 +112,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetFrequency(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -122,7 +122,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -130,7 +130,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -144,7 +144,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetReptCurr(v string) {
 
 // GetListingStartDate returns the ListingStartDate field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDate() string {
-	if o == nil || isNil(o.ListingStartDate) {
+	if o == nil || IsNil(o.ListingStartDate) {
 		var ret string
 		return ret
 	}
@@ -154,7 +154,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDate() string {
 // GetListingStartDateOk returns a tuple with the ListingStartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.ListingStartDate) {
+	if o == nil || IsNil(o.ListingStartDate) {
 		return nil, false
 	}
 	return o.ListingStartDate, true
@@ -162,7 +162,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDateOk() (*string, 
 
 // HasListingStartDate returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasListingStartDate() bool {
-	if o != nil && !isNil(o.ListingStartDate) {
+	if o != nil && !IsNil(o.ListingStartDate) {
 		return true
 	}
 
@@ -176,7 +176,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetListingStartDate(v string) {
 
 // GetListingEndDate returns the ListingEndDate field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDate() string {
-	if o == nil || isNil(o.ListingEndDate) {
+	if o == nil || IsNil(o.ListingEndDate) {
 		var ret string
 		return ret
 	}
@@ -186,7 +186,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDate() string {
 // GetListingEndDateOk returns a tuple with the ListingEndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.ListingEndDate) {
+	if o == nil || IsNil(o.ListingEndDate) {
 		return nil, false
 	}
 	return o.ListingEndDate, true
@@ -194,7 +194,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDateOk() (*string, bo
 
 // HasListingEndDate returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasListingEndDate() bool {
-	if o != nil && !isNil(o.ListingEndDate) {
+	if o != nil && !IsNil(o.ListingEndDate) {
 		return true
 	}
 
@@ -208,7 +208,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetListingEndDate(v string) {
 
 // GetReportStartDate returns the ReportStartDate field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetReportStartDate() string {
-	if o == nil || isNil(o.ReportStartDate) {
+	if o == nil || IsNil(o.ReportStartDate) {
 		var ret string
 		return ret
 	}
@@ -218,7 +218,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReportStartDate() string {
 // GetReportStartDateOk returns a tuple with the ReportStartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetReportStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.ReportStartDate) {
+	if o == nil || IsNil(o.ReportStartDate) {
 		return nil, false
 	}
 	return o.ReportStartDate, true
@@ -226,7 +226,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReportStartDateOk() (*string, b
 
 // HasReportStartDate returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasReportStartDate() bool {
-	if o != nil && !isNil(o.ReportStartDate) {
+	if o != nil && !IsNil(o.ReportStartDate) {
 		return true
 	}
 
@@ -240,7 +240,7 @@ func (o *GetEthCollectionListingsOHLCRequest) SetReportStartDate(v string) {
 
 // GetReportEndDate returns the ReportEndDate field value if set, zero value otherwise.
 func (o *GetEthCollectionListingsOHLCRequest) GetReportEndDate() string {
-	if o == nil || isNil(o.ReportEndDate) {
+	if o == nil || IsNil(o.ReportEndDate) {
 		var ret string
 		return ret
 	}
@@ -250,7 +250,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReportEndDate() string {
 // GetReportEndDateOk returns a tuple with the ReportEndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetEthCollectionListingsOHLCRequest) GetReportEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.ReportEndDate) {
+	if o == nil || IsNil(o.ReportEndDate) {
 		return nil, false
 	}
 	return o.ReportEndDate, true
@@ -258,7 +258,7 @@ func (o *GetEthCollectionListingsOHLCRequest) GetReportEndDateOk() (*string, boo
 
 // HasReportEndDate returns a boolean if a field has been set.
 func (o *GetEthCollectionListingsOHLCRequest) HasReportEndDate() bool {
-	if o != nil && !isNil(o.ReportEndDate) {
+	if o != nil && !IsNil(o.ReportEndDate) {
 		return true
 	}
 
@@ -281,22 +281,22 @@ func (o GetEthCollectionListingsOHLCRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthCollectionListingsOHLCRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ListingStartDate) {
+	if !IsNil(o.ListingStartDate) {
 		toSerialize["listing_start_date"] = o.ListingStartDate
 	}
-	if !isNil(o.ListingEndDate) {
+	if !IsNil(o.ListingEndDate) {
 		toSerialize["listing_end_date"] = o.ListingEndDate
 	}
-	if !isNil(o.ReportStartDate) {
+	if !IsNil(o.ReportStartDate) {
 		toSerialize["report_start_date"] = o.ReportStartDate
 	}
-	if !isNil(o.ReportEndDate) {
+	if !IsNil(o.ReportEndDate) {
 		toSerialize["report_end_date"] = o.ReportEndDate
 	}
 	return toSerialize, nil

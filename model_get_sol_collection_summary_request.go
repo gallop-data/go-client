@@ -78,7 +78,7 @@ func (o *GetSolCollectionSummaryRequest) SetCollectionTag(v string) {
 
 // GetGroupBy returns the GroupBy field value if set, zero value otherwise.
 func (o *GetSolCollectionSummaryRequest) GetGroupBy() string {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		var ret string
 		return ret
 	}
@@ -88,7 +88,7 @@ func (o *GetSolCollectionSummaryRequest) GetGroupBy() string {
 // GetGroupByOk returns a tuple with the GroupBy field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionSummaryRequest) GetGroupByOk() (*string, bool) {
-	if o == nil || isNil(o.GroupBy) {
+	if o == nil || IsNil(o.GroupBy) {
 		return nil, false
 	}
 	return o.GroupBy, true
@@ -96,7 +96,7 @@ func (o *GetSolCollectionSummaryRequest) GetGroupByOk() (*string, bool) {
 
 // HasGroupBy returns a boolean if a field has been set.
 func (o *GetSolCollectionSummaryRequest) HasGroupBy() bool {
-	if o != nil && !isNil(o.GroupBy) {
+	if o != nil && !IsNil(o.GroupBy) {
 		return true
 	}
 
@@ -110,7 +110,7 @@ func (o *GetSolCollectionSummaryRequest) SetGroupBy(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetSolCollectionSummaryRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -120,7 +120,7 @@ func (o *GetSolCollectionSummaryRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionSummaryRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -128,7 +128,7 @@ func (o *GetSolCollectionSummaryRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetSolCollectionSummaryRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -142,7 +142,7 @@ func (o *GetSolCollectionSummaryRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetSolCollectionSummaryRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -152,7 +152,7 @@ func (o *GetSolCollectionSummaryRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionSummaryRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -160,7 +160,7 @@ func (o *GetSolCollectionSummaryRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetSolCollectionSummaryRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -174,7 +174,7 @@ func (o *GetSolCollectionSummaryRequest) SetEndDate(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetSolCollectionSummaryRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -184,7 +184,7 @@ func (o *GetSolCollectionSummaryRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionSummaryRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -192,7 +192,7 @@ func (o *GetSolCollectionSummaryRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetSolCollectionSummaryRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -206,7 +206,7 @@ func (o *GetSolCollectionSummaryRequest) SetReptCurr(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetSolCollectionSummaryRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -216,7 +216,7 @@ func (o *GetSolCollectionSummaryRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCollectionSummaryRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -224,7 +224,7 @@ func (o *GetSolCollectionSummaryRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetSolCollectionSummaryRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -247,19 +247,19 @@ func (o GetSolCollectionSummaryRequest) MarshalJSON() ([]byte, error) {
 func (o GetSolCollectionSummaryRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_tag"] = o.CollectionTag
-	if !isNil(o.GroupBy) {
+	if !IsNil(o.GroupBy) {
 		toSerialize["group_by"] = o.GroupBy
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
 	return toSerialize, nil

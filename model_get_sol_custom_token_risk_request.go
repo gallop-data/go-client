@@ -118,7 +118,7 @@ func (o *GetSolCustomTokenRiskRequest) SetHoldingPeriod(v string) {
 
 // GetTokenId returns the TokenId field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetTokenId() string {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		var ret string
 		return ret
 	}
@@ -128,7 +128,7 @@ func (o *GetSolCustomTokenRiskRequest) GetTokenId() string {
 // GetTokenIdOk returns a tuple with the TokenId field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetTokenIdOk() (*string, bool) {
-	if o == nil || isNil(o.TokenId) {
+	if o == nil || IsNil(o.TokenId) {
 		return nil, false
 	}
 	return o.TokenId, true
@@ -136,7 +136,7 @@ func (o *GetSolCustomTokenRiskRequest) GetTokenIdOk() (*string, bool) {
 
 // HasTokenId returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasTokenId() bool {
-	if o != nil && !isNil(o.TokenId) {
+	if o != nil && !IsNil(o.TokenId) {
 		return true
 	}
 
@@ -150,7 +150,7 @@ func (o *GetSolCustomTokenRiskRequest) SetTokenId(v string) {
 
 // GetDist returns the Dist field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetDist() string {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		var ret string
 		return ret
 	}
@@ -160,7 +160,7 @@ func (o *GetSolCustomTokenRiskRequest) GetDist() string {
 // GetDistOk returns a tuple with the Dist field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetDistOk() (*string, bool) {
-	if o == nil || isNil(o.Dist) {
+	if o == nil || IsNil(o.Dist) {
 		return nil, false
 	}
 	return o.Dist, true
@@ -168,7 +168,7 @@ func (o *GetSolCustomTokenRiskRequest) GetDistOk() (*string, bool) {
 
 // HasDist returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasDist() bool {
-	if o != nil && !isNil(o.Dist) {
+	if o != nil && !IsNil(o.Dist) {
 		return true
 	}
 
@@ -182,7 +182,7 @@ func (o *GetSolCustomTokenRiskRequest) SetDist(v string) {
 
 // GetStartDate returns the StartDate field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetStartDate() string {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		var ret string
 		return ret
 	}
@@ -192,7 +192,7 @@ func (o *GetSolCustomTokenRiskRequest) GetStartDate() string {
 // GetStartDateOk returns a tuple with the StartDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetStartDateOk() (*string, bool) {
-	if o == nil || isNil(o.StartDate) {
+	if o == nil || IsNil(o.StartDate) {
 		return nil, false
 	}
 	return o.StartDate, true
@@ -200,7 +200,7 @@ func (o *GetSolCustomTokenRiskRequest) GetStartDateOk() (*string, bool) {
 
 // HasStartDate returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasStartDate() bool {
-	if o != nil && !isNil(o.StartDate) {
+	if o != nil && !IsNil(o.StartDate) {
 		return true
 	}
 
@@ -214,7 +214,7 @@ func (o *GetSolCustomTokenRiskRequest) SetStartDate(v string) {
 
 // GetEndDate returns the EndDate field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetEndDate() string {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		var ret string
 		return ret
 	}
@@ -224,7 +224,7 @@ func (o *GetSolCustomTokenRiskRequest) GetEndDate() string {
 // GetEndDateOk returns a tuple with the EndDate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetEndDateOk() (*string, bool) {
-	if o == nil || isNil(o.EndDate) {
+	if o == nil || IsNil(o.EndDate) {
 		return nil, false
 	}
 	return o.EndDate, true
@@ -232,7 +232,7 @@ func (o *GetSolCustomTokenRiskRequest) GetEndDateOk() (*string, bool) {
 
 // HasEndDate returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasEndDate() bool {
-	if o != nil && !isNil(o.EndDate) {
+	if o != nil && !IsNil(o.EndDate) {
 		return true
 	}
 
@@ -246,7 +246,7 @@ func (o *GetSolCustomTokenRiskRequest) SetEndDate(v string) {
 
 // GetRiskFreeRate returns the RiskFreeRate field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetRiskFreeRate() float32 {
-	if o == nil || isNil(o.RiskFreeRate) {
+	if o == nil || IsNil(o.RiskFreeRate) {
 		var ret float32
 		return ret
 	}
@@ -256,7 +256,7 @@ func (o *GetSolCustomTokenRiskRequest) GetRiskFreeRate() float32 {
 // GetRiskFreeRateOk returns a tuple with the RiskFreeRate field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetRiskFreeRateOk() (*float32, bool) {
-	if o == nil || isNil(o.RiskFreeRate) {
+	if o == nil || IsNil(o.RiskFreeRate) {
 		return nil, false
 	}
 	return o.RiskFreeRate, true
@@ -264,7 +264,7 @@ func (o *GetSolCustomTokenRiskRequest) GetRiskFreeRateOk() (*float32, bool) {
 
 // HasRiskFreeRate returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasRiskFreeRate() bool {
-	if o != nil && !isNil(o.RiskFreeRate) {
+	if o != nil && !IsNil(o.RiskFreeRate) {
 		return true
 	}
 
@@ -278,7 +278,7 @@ func (o *GetSolCustomTokenRiskRequest) SetRiskFreeRate(v float32) {
 
 // GetWinsOutliers returns the WinsOutliers field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetWinsOutliers() bool {
-	if o == nil || isNil(o.WinsOutliers) {
+	if o == nil || IsNil(o.WinsOutliers) {
 		var ret bool
 		return ret
 	}
@@ -288,7 +288,7 @@ func (o *GetSolCustomTokenRiskRequest) GetWinsOutliers() bool {
 // GetWinsOutliersOk returns a tuple with the WinsOutliers field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetWinsOutliersOk() (*bool, bool) {
-	if o == nil || isNil(o.WinsOutliers) {
+	if o == nil || IsNil(o.WinsOutliers) {
 		return nil, false
 	}
 	return o.WinsOutliers, true
@@ -296,7 +296,7 @@ func (o *GetSolCustomTokenRiskRequest) GetWinsOutliersOk() (*bool, bool) {
 
 // HasWinsOutliers returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasWinsOutliers() bool {
-	if o != nil && !isNil(o.WinsOutliers) {
+	if o != nil && !IsNil(o.WinsOutliers) {
 		return true
 	}
 
@@ -310,7 +310,7 @@ func (o *GetSolCustomTokenRiskRequest) SetWinsOutliers(v bool) {
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetFrequency() string {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		var ret string
 		return ret
 	}
@@ -320,7 +320,7 @@ func (o *GetSolCustomTokenRiskRequest) GetFrequency() string {
 // GetFrequencyOk returns a tuple with the Frequency field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetFrequencyOk() (*string, bool) {
-	if o == nil || isNil(o.Frequency) {
+	if o == nil || IsNil(o.Frequency) {
 		return nil, false
 	}
 	return o.Frequency, true
@@ -328,7 +328,7 @@ func (o *GetSolCustomTokenRiskRequest) GetFrequencyOk() (*string, bool) {
 
 // HasFrequency returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasFrequency() bool {
-	if o != nil && !isNil(o.Frequency) {
+	if o != nil && !IsNil(o.Frequency) {
 		return true
 	}
 
@@ -342,7 +342,7 @@ func (o *GetSolCustomTokenRiskRequest) SetFrequency(v string) {
 
 // GetReptCurr returns the ReptCurr field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetReptCurr() string {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		var ret string
 		return ret
 	}
@@ -352,7 +352,7 @@ func (o *GetSolCustomTokenRiskRequest) GetReptCurr() string {
 // GetReptCurrOk returns a tuple with the ReptCurr field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetReptCurrOk() (*string, bool) {
-	if o == nil || isNil(o.ReptCurr) {
+	if o == nil || IsNil(o.ReptCurr) {
 		return nil, false
 	}
 	return o.ReptCurr, true
@@ -360,7 +360,7 @@ func (o *GetSolCustomTokenRiskRequest) GetReptCurrOk() (*string, bool) {
 
 // HasReptCurr returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasReptCurr() bool {
-	if o != nil && !isNil(o.ReptCurr) {
+	if o != nil && !IsNil(o.ReptCurr) {
 		return true
 	}
 
@@ -374,7 +374,7 @@ func (o *GetSolCustomTokenRiskRequest) SetReptCurr(v string) {
 
 // GetExcludeWash returns the ExcludeWash field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetExcludeWash() bool {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		var ret bool
 		return ret
 	}
@@ -384,7 +384,7 @@ func (o *GetSolCustomTokenRiskRequest) GetExcludeWash() bool {
 // GetExcludeWashOk returns a tuple with the ExcludeWash field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetExcludeWashOk() (*bool, bool) {
-	if o == nil || isNil(o.ExcludeWash) {
+	if o == nil || IsNil(o.ExcludeWash) {
 		return nil, false
 	}
 	return o.ExcludeWash, true
@@ -392,7 +392,7 @@ func (o *GetSolCustomTokenRiskRequest) GetExcludeWashOk() (*bool, bool) {
 
 // HasExcludeWash returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasExcludeWash() bool {
-	if o != nil && !isNil(o.ExcludeWash) {
+	if o != nil && !IsNil(o.ExcludeWash) {
 		return true
 	}
 
@@ -406,7 +406,7 @@ func (o *GetSolCustomTokenRiskRequest) SetExcludeWash(v bool) {
 
 // GetDrawdown returns the Drawdown field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetDrawdown() bool {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		var ret bool
 		return ret
 	}
@@ -416,7 +416,7 @@ func (o *GetSolCustomTokenRiskRequest) GetDrawdown() bool {
 // GetDrawdownOk returns a tuple with the Drawdown field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
-	if o == nil || isNil(o.Drawdown) {
+	if o == nil || IsNil(o.Drawdown) {
 		return nil, false
 	}
 	return o.Drawdown, true
@@ -424,7 +424,7 @@ func (o *GetSolCustomTokenRiskRequest) GetDrawdownOk() (*bool, bool) {
 
 // HasDrawdown returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasDrawdown() bool {
-	if o != nil && !isNil(o.Drawdown) {
+	if o != nil && !IsNil(o.Drawdown) {
 		return true
 	}
 
@@ -438,7 +438,7 @@ func (o *GetSolCustomTokenRiskRequest) SetDrawdown(v bool) {
 
 // GetArcParams returns the ArcParams field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetArcParams() GetEthCustomCollectionRiskRequestArcParams {
-	if o == nil || isNil(o.ArcParams) {
+	if o == nil || IsNil(o.ArcParams) {
 		var ret GetEthCustomCollectionRiskRequestArcParams
 		return ret
 	}
@@ -448,7 +448,7 @@ func (o *GetSolCustomTokenRiskRequest) GetArcParams() GetEthCustomCollectionRisk
 // GetArcParamsOk returns a tuple with the ArcParams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetArcParamsOk() (*GetEthCustomCollectionRiskRequestArcParams, bool) {
-	if o == nil || isNil(o.ArcParams) {
+	if o == nil || IsNil(o.ArcParams) {
 		return nil, false
 	}
 	return o.ArcParams, true
@@ -456,7 +456,7 @@ func (o *GetSolCustomTokenRiskRequest) GetArcParamsOk() (*GetEthCustomCollection
 
 // HasArcParams returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasArcParams() bool {
-	if o != nil && !isNil(o.ArcParams) {
+	if o != nil && !IsNil(o.ArcParams) {
 		return true
 	}
 
@@ -470,7 +470,7 @@ func (o *GetSolCustomTokenRiskRequest) SetArcParams(v GetEthCustomCollectionRisk
 
 // GetGarParams returns the GarParams field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetGarParams() GetEthCustomCollectionRiskRequestGarParams {
-	if o == nil || isNil(o.GarParams) {
+	if o == nil || IsNil(o.GarParams) {
 		var ret GetEthCustomCollectionRiskRequestGarParams
 		return ret
 	}
@@ -480,7 +480,7 @@ func (o *GetSolCustomTokenRiskRequest) GetGarParams() GetEthCustomCollectionRisk
 // GetGarParamsOk returns a tuple with the GarParams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetGarParamsOk() (*GetEthCustomCollectionRiskRequestGarParams, bool) {
-	if o == nil || isNil(o.GarParams) {
+	if o == nil || IsNil(o.GarParams) {
 		return nil, false
 	}
 	return o.GarParams, true
@@ -488,7 +488,7 @@ func (o *GetSolCustomTokenRiskRequest) GetGarParamsOk() (*GetEthCustomCollection
 
 // HasGarParams returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasGarParams() bool {
-	if o != nil && !isNil(o.GarParams) {
+	if o != nil && !IsNil(o.GarParams) {
 		return true
 	}
 
@@ -502,7 +502,7 @@ func (o *GetSolCustomTokenRiskRequest) SetGarParams(v GetEthCustomCollectionRisk
 
 // GetHarParams returns the HarParams field value if set, zero value otherwise.
 func (o *GetSolCustomTokenRiskRequest) GetHarParams() GetEthCustomCollectionRiskRequestHarParams {
-	if o == nil || isNil(o.HarParams) {
+	if o == nil || IsNil(o.HarParams) {
 		var ret GetEthCustomCollectionRiskRequestHarParams
 		return ret
 	}
@@ -512,7 +512,7 @@ func (o *GetSolCustomTokenRiskRequest) GetHarParams() GetEthCustomCollectionRisk
 // GetHarParamsOk returns a tuple with the HarParams field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 func (o *GetSolCustomTokenRiskRequest) GetHarParamsOk() (*GetEthCustomCollectionRiskRequestHarParams, bool) {
-	if o == nil || isNil(o.HarParams) {
+	if o == nil || IsNil(o.HarParams) {
 		return nil, false
 	}
 	return o.HarParams, true
@@ -520,7 +520,7 @@ func (o *GetSolCustomTokenRiskRequest) GetHarParamsOk() (*GetEthCustomCollection
 
 // HasHarParams returns a boolean if a field has been set.
 func (o *GetSolCustomTokenRiskRequest) HasHarParams() bool {
-	if o != nil && !isNil(o.HarParams) {
+	if o != nil && !IsNil(o.HarParams) {
 		return true
 	}
 
@@ -544,43 +544,43 @@ func (o GetSolCustomTokenRiskRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["mint_address"] = o.MintAddress
 	toSerialize["holding_period"] = o.HoldingPeriod
-	if !isNil(o.TokenId) {
+	if !IsNil(o.TokenId) {
 		toSerialize["token_id"] = o.TokenId
 	}
-	if !isNil(o.Dist) {
+	if !IsNil(o.Dist) {
 		toSerialize["dist"] = o.Dist
 	}
-	if !isNil(o.StartDate) {
+	if !IsNil(o.StartDate) {
 		toSerialize["start_date"] = o.StartDate
 	}
-	if !isNil(o.EndDate) {
+	if !IsNil(o.EndDate) {
 		toSerialize["end_date"] = o.EndDate
 	}
-	if !isNil(o.RiskFreeRate) {
+	if !IsNil(o.RiskFreeRate) {
 		toSerialize["risk_free_rate"] = o.RiskFreeRate
 	}
-	if !isNil(o.WinsOutliers) {
+	if !IsNil(o.WinsOutliers) {
 		toSerialize["wins_outliers"] = o.WinsOutliers
 	}
-	if !isNil(o.Frequency) {
+	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
-	if !isNil(o.ReptCurr) {
+	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
 	}
-	if !isNil(o.ExcludeWash) {
+	if !IsNil(o.ExcludeWash) {
 		toSerialize["exclude_wash"] = o.ExcludeWash
 	}
-	if !isNil(o.Drawdown) {
+	if !IsNil(o.Drawdown) {
 		toSerialize["drawdown"] = o.Drawdown
 	}
-	if !isNil(o.ArcParams) {
+	if !IsNil(o.ArcParams) {
 		toSerialize["arc_params"] = o.ArcParams
 	}
-	if !isNil(o.GarParams) {
+	if !IsNil(o.GarParams) {
 		toSerialize["gar_params"] = o.GarParams
 	}
-	if !isNil(o.HarParams) {
+	if !IsNil(o.HarParams) {
 		toSerialize["har_params"] = o.HarParams
 	}
 	return toSerialize, nil
