@@ -259,9 +259,9 @@ func (r ApiGetEthCollectionListingsOHLCRequest) Execute() (*http.Response, error
 }
 
 /*
-GetEthCollectionListingsOHLC Collection Price Listings Candlesticks
+GetEthCollectionListingsOHLC Collection Floor Price and Listings Candlesticks
 
-Returns open, high, low, close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings and the number of unique owners
+Returns historical floor price or more extensive open / high / floor / close candlesticks for collection listings at marketplaces at a selected time interval, as well as the number of active listings, the number of unique owners and the average age of open listings
 
  @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  @return ApiGetEthCollectionListingsOHLCRequest

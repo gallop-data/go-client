@@ -5,10 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CollectionAddress** | **string** | The Ethereum contract address to identify the collection. | 
-**Frequency** | Pointer to **string** | The interval at which to return OHLC, e.g. &#x60;1D&#x60; for daily, &#x60;1M&#x60; for monthly etc. | [optional] 
+**FloorOnly** | Pointer to **bool** | If &#x60;true&#x60;, report only historical floor prices. Otherwise, report OHFC candlesticks, number of active listings, number of unique owners and the average age of open listings. | [optional] 
+**Frequency** | Pointer to **string** | The interval at which to return Floor prices / OHLF, e.g. &#x60;1D&#x60; for daily, &#x60;1M&#x60; for monthly etc. Must be &gt;&#x3D; &#x60;6H&#x60; | [optional] 
 **ReptCurr** | Pointer to **string** | The currency to report results in | [optional] 
-**ListingStartDate** | Pointer to **string** | The ISO 8601 date/datetime of the oldest listing to pull for calculations | [optional] 
-**ListingEndDate** | Pointer to **string** | The ISO 8601 date/datetime of the most recent listing to pull for calculations | [optional] 
 **ReportStartDate** | Pointer to **string** | The ISO 8601 start date/datetime to return results for | [optional] 
 **ReportEndDate** | Pointer to **string** | The ISO 8601 end date/datetime to return results for | [optional] 
 
@@ -50,6 +49,31 @@ and a boolean to check if the value has been set.
 
 SetCollectionAddress sets CollectionAddress field to given value.
 
+
+### GetFloorOnly
+
+`func (o *GetEthCollectionListingsOHLCRequest) GetFloorOnly() bool`
+
+GetFloorOnly returns the FloorOnly field if non-nil, zero value otherwise.
+
+### GetFloorOnlyOk
+
+`func (o *GetEthCollectionListingsOHLCRequest) GetFloorOnlyOk() (*bool, bool)`
+
+GetFloorOnlyOk returns a tuple with the FloorOnly field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetFloorOnly
+
+`func (o *GetEthCollectionListingsOHLCRequest) SetFloorOnly(v bool)`
+
+SetFloorOnly sets FloorOnly field to given value.
+
+### HasFloorOnly
+
+`func (o *GetEthCollectionListingsOHLCRequest) HasFloorOnly() bool`
+
+HasFloorOnly returns a boolean if a field has been set.
 
 ### GetFrequency
 
@@ -100,56 +124,6 @@ SetReptCurr sets ReptCurr field to given value.
 `func (o *GetEthCollectionListingsOHLCRequest) HasReptCurr() bool`
 
 HasReptCurr returns a boolean if a field has been set.
-
-### GetListingStartDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDate() string`
-
-GetListingStartDate returns the ListingStartDate field if non-nil, zero value otherwise.
-
-### GetListingStartDateOk
-
-`func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDateOk() (*string, bool)`
-
-GetListingStartDateOk returns a tuple with the ListingStartDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetListingStartDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) SetListingStartDate(v string)`
-
-SetListingStartDate sets ListingStartDate field to given value.
-
-### HasListingStartDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) HasListingStartDate() bool`
-
-HasListingStartDate returns a boolean if a field has been set.
-
-### GetListingEndDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDate() string`
-
-GetListingEndDate returns the ListingEndDate field if non-nil, zero value otherwise.
-
-### GetListingEndDateOk
-
-`func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDateOk() (*string, bool)`
-
-GetListingEndDateOk returns a tuple with the ListingEndDate field if it's non-nil, zero value otherwise
-and a boolean to check if the value has been set.
-
-### SetListingEndDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) SetListingEndDate(v string)`
-
-SetListingEndDate sets ListingEndDate field to given value.
-
-### HasListingEndDate
-
-`func (o *GetEthCollectionListingsOHLCRequest) HasListingEndDate() bool`
-
-HasListingEndDate returns a boolean if a field has been set.
 
 ### GetReportStartDate
 

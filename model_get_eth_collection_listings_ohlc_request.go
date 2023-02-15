@@ -22,14 +22,12 @@ var _ MappedNullable = &GetEthCollectionListingsOHLCRequest{}
 type GetEthCollectionListingsOHLCRequest struct {
 	// The Ethereum contract address to identify the collection.
 	CollectionAddress string `json:"collection_address"`
-	// The interval at which to return OHLC, e.g. `1D` for daily, `1M` for monthly etc.
+	// If `true`, report only historical floor prices. Otherwise, report OHFC candlesticks, number of active listings, number of unique owners and the average age of open listings.
+	FloorOnly *bool `json:"floor_only,omitempty"`
+	// The interval at which to return Floor prices / OHLF, e.g. `1D` for daily, `1M` for monthly etc. Must be >= `6H`
 	Frequency *string `json:"frequency,omitempty"`
 	// The currency to report results in
 	ReptCurr *string `json:"rept_curr,omitempty"`
-	// The ISO 8601 date/datetime of the oldest listing to pull for calculations
-	ListingStartDate *string `json:"listing_start_date,omitempty"`
-	// The ISO 8601 date/datetime of the most recent listing to pull for calculations
-	ListingEndDate *string `json:"listing_end_date,omitempty"`
 	// The ISO 8601 start date/datetime to return results for
 	ReportStartDate *string `json:"report_start_date,omitempty"`
 	// The ISO 8601 end date/datetime to return results for
@@ -76,6 +74,38 @@ func (o *GetEthCollectionListingsOHLCRequest) GetCollectionAddressOk() (*string,
 // SetCollectionAddress sets field value
 func (o *GetEthCollectionListingsOHLCRequest) SetCollectionAddress(v string) {
 	o.CollectionAddress = v
+}
+
+// GetFloorOnly returns the FloorOnly field value if set, zero value otherwise.
+func (o *GetEthCollectionListingsOHLCRequest) GetFloorOnly() bool {
+	if o == nil || IsNil(o.FloorOnly) {
+		var ret bool
+		return ret
+	}
+	return *o.FloorOnly
+}
+
+// GetFloorOnlyOk returns a tuple with the FloorOnly field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *GetEthCollectionListingsOHLCRequest) GetFloorOnlyOk() (*bool, bool) {
+	if o == nil || IsNil(o.FloorOnly) {
+		return nil, false
+	}
+	return o.FloorOnly, true
+}
+
+// HasFloorOnly returns a boolean if a field has been set.
+func (o *GetEthCollectionListingsOHLCRequest) HasFloorOnly() bool {
+	if o != nil && !IsNil(o.FloorOnly) {
+		return true
+	}
+
+	return false
+}
+
+// SetFloorOnly gets a reference to the given bool and assigns it to the FloorOnly field.
+func (o *GetEthCollectionListingsOHLCRequest) SetFloorOnly(v bool) {
+	o.FloorOnly = &v
 }
 
 // GetFrequency returns the Frequency field value if set, zero value otherwise.
@@ -140,70 +170,6 @@ func (o *GetEthCollectionListingsOHLCRequest) HasReptCurr() bool {
 // SetReptCurr gets a reference to the given string and assigns it to the ReptCurr field.
 func (o *GetEthCollectionListingsOHLCRequest) SetReptCurr(v string) {
 	o.ReptCurr = &v
-}
-
-// GetListingStartDate returns the ListingStartDate field value if set, zero value otherwise.
-func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDate() string {
-	if o == nil || IsNil(o.ListingStartDate) {
-		var ret string
-		return ret
-	}
-	return *o.ListingStartDate
-}
-
-// GetListingStartDateOk returns a tuple with the ListingStartDate field value if set, nil otherwise
-// and a boolean to check if the value has been set.
-func (o *GetEthCollectionListingsOHLCRequest) GetListingStartDateOk() (*string, bool) {
-	if o == nil || IsNil(o.ListingStartDate) {
-		return nil, false
-	}
-	return o.ListingStartDate, true
-}
-
-// HasListingStartDate returns a boolean if a field has been set.
-func (o *GetEthCollectionListingsOHLCRequest) HasListingStartDate() bool {
-	if o != nil && !IsNil(o.ListingStartDate) {
-		return true
-	}
-
-	return false
-}
-
-// SetListingStartDate gets a reference to the given string and assigns it to the ListingStartDate field.
-func (o *GetEthCollectionListingsOHLCRequest) SetListingStartDate(v string) {
-	o.ListingStartDate = &v
-}
-
-// GetListingEndDate returns the ListingEndDate field value if set, zero value otherwise.
-func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDate() string {
-	if o == nil || IsNil(o.ListingEndDate) {
-		var ret string
-		return ret
-	}
-	return *o.ListingEndDate
-}
-
-// GetListingEndDateOk returns a tuple with the ListingEndDate field value if set, nil otherwise
-// and a boolean to check if the value has been set.
-func (o *GetEthCollectionListingsOHLCRequest) GetListingEndDateOk() (*string, bool) {
-	if o == nil || IsNil(o.ListingEndDate) {
-		return nil, false
-	}
-	return o.ListingEndDate, true
-}
-
-// HasListingEndDate returns a boolean if a field has been set.
-func (o *GetEthCollectionListingsOHLCRequest) HasListingEndDate() bool {
-	if o != nil && !IsNil(o.ListingEndDate) {
-		return true
-	}
-
-	return false
-}
-
-// SetListingEndDate gets a reference to the given string and assigns it to the ListingEndDate field.
-func (o *GetEthCollectionListingsOHLCRequest) SetListingEndDate(v string) {
-	o.ListingEndDate = &v
 }
 
 // GetReportStartDate returns the ReportStartDate field value if set, zero value otherwise.
@@ -281,17 +247,14 @@ func (o GetEthCollectionListingsOHLCRequest) MarshalJSON() ([]byte, error) {
 func (o GetEthCollectionListingsOHLCRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["collection_address"] = o.CollectionAddress
+	if !IsNil(o.FloorOnly) {
+		toSerialize["floor_only"] = o.FloorOnly
+	}
 	if !IsNil(o.Frequency) {
 		toSerialize["frequency"] = o.Frequency
 	}
 	if !IsNil(o.ReptCurr) {
 		toSerialize["rept_curr"] = o.ReptCurr
-	}
-	if !IsNil(o.ListingStartDate) {
-		toSerialize["listing_start_date"] = o.ListingStartDate
-	}
-	if !IsNil(o.ListingEndDate) {
-		toSerialize["listing_end_date"] = o.ListingEndDate
 	}
 	if !IsNil(o.ReportStartDate) {
 		toSerialize["report_start_date"] = o.ReportStartDate

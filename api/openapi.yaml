@@ -3184,9 +3184,10 @@ paths:
       - Ethereum
   /analytics/eth/getCollectionListingsOHLC:
     post:
-      description: "Returns open, high, low, close candlesticks for collection listings\
-        \ at marketplaces at a selected time interval, as well as the number of active\
-        \ listings and the number of unique owners"
+      description: "Returns historical floor price or more extensive open / high /\
+        \ floor / close candlesticks for collection listings at marketplaces at a\
+        \ selected time interval, as well as the number of active listings, the number\
+        \ of unique owners and the average age of open listings"
       operationId: getEthCollectionListingsOHLC
       requestBody:
         content:
@@ -3228,7 +3229,7 @@ paths:
           description: Unauthorized
       security:
       - api_key: []
-      summary: Collection Price Listings Candlesticks
+      summary: Collection Floor Price and Listings Candlesticks
       tags:
       - Ethereum
   /analytics/eth/getLeaderBoard:
@@ -8443,9 +8444,15 @@ components:
           description: The Ethereum contract address to identify the collection.
           example: 0x7bd29408f11d2bfc23c34f18275bbf23bb716bc7
           type: string
+        floor_only:
+          description: "If `true`, report only historical floor prices. Otherwise,\
+            \ report OHFC candlesticks, number of active listings, number of unique\
+            \ owners and the average age of open listings."
+          example: true
+          type: boolean
         frequency:
-          description: "The interval at which to return OHLC, e.g. `1D` for daily,\
-            \ `1M` for monthly etc."
+          description: "The interval at which to return Floor prices / OHLF, e.g.\
+            \ `1D` for daily, `1M` for monthly etc. Must be >= `6H`"
           example: 1D
           type: string
         rept_curr:
@@ -8454,16 +8461,6 @@ components:
           - eth
           - usd
           example: eth
-          type: string
-        listing_start_date:
-          description: The ISO 8601 date/datetime of the oldest listing to pull for
-            calculations
-          example: 2021-08-01
-          type: string
-        listing_end_date:
-          description: The ISO 8601 date/datetime of the most recent listing to pull
-            for calculations
-          example: 2023-03-04
           type: string
         report_start_date:
           description: The ISO 8601 start date/datetime to return results for

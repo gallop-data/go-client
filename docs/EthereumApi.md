@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**GetEthCollectionFloorPriceOHLC**](EthereumApi.md#GetEthCollectionFloorPriceOHLC) | **Post** /analytics/eth/getCollectionFloorPriceOHLC | Intraday Marketplace Floor Price by Collection
 [**GetEthCollectionForecasts**](EthereumApi.md#GetEthCollectionForecasts) | **Post** /insights/eth/getCollectionForecasts | Price Forecast by Collection
-[**GetEthCollectionListingsOHLC**](EthereumApi.md#GetEthCollectionListingsOHLC) | **Post** /analytics/eth/getCollectionListingsOHLC | Collection Price Listings Candlesticks
+[**GetEthCollectionListingsOHLC**](EthereumApi.md#GetEthCollectionListingsOHLC) | **Post** /analytics/eth/getCollectionListingsOHLC | Collection Floor Price and Listings Candlesticks
 [**GetEthCollectionOwners**](EthereumApi.md#GetEthCollectionOwners) | **Post** /data/eth/getCollectionOwners | Wallet Owners by Collection
 [**GetEthCollectionPriceDiff**](EthereumApi.md#GetEthCollectionPriceDiff) | **Post** /analytics/eth/getCollectionPriceDiff | Price Differentiation by Trait
 [**GetEthCollectionSalesOHLC**](EthereumApi.md#GetEthCollectionSalesOHLC) | **Post** /analytics/eth/getCollectionSalesOHLC | Collection Sales Price Candlesticks
@@ -170,7 +170,7 @@ Name | Type | Description  | Notes
 
 > GetEthCollectionListingsOHLC(ctx).GetEthCollectionListingsOHLCRequest(getEthCollectionListingsOHLCRequest).Execute()
 
-Collection Price Listings Candlesticks
+Collection Floor Price and Listings Candlesticks
 
 
 
