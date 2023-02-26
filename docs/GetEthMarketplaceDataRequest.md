@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CollectionAddress** | **[]string** | Array of collection addresses | 
 **SubCollectionTags** | Pointer to **[]string** | Array of sub collections (e.g. Art Blocks) | [optional] 
+**Normalized** | Pointer to **bool** | Return normalized data across marketplaces | [optional] 
 
 ## Methods
 
@@ -70,6 +71,31 @@ SetSubCollectionTags sets SubCollectionTags field to given value.
 `func (o *GetEthMarketplaceDataRequest) HasSubCollectionTags() bool`
 
 HasSubCollectionTags returns a boolean if a field has been set.
+
+### GetNormalized
+
+`func (o *GetEthMarketplaceDataRequest) GetNormalized() bool`
+
+GetNormalized returns the Normalized field if non-nil, zero value otherwise.
+
+### GetNormalizedOk
+
+`func (o *GetEthMarketplaceDataRequest) GetNormalizedOk() (*bool, bool)`
+
+GetNormalizedOk returns a tuple with the Normalized field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetNormalized
+
+`func (o *GetEthMarketplaceDataRequest) SetNormalized(v bool)`
+
+SetNormalized sets Normalized field to given value.
+
+### HasNormalized
+
+`func (o *GetEthMarketplaceDataRequest) HasNormalized() bool`
+
+HasNormalized returns a boolean if a field has been set.
 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

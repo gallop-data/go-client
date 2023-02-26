@@ -3213,6 +3213,116 @@ func (a *EthereumApiService) GetEthWalletTransactionsExecute(r ApiGetEthWalletTr
 	return localVarHTTPResponse, nil
 }
 
+type ApiGetEthWalletValuationRequest struct {
+	ctx context.Context
+	ApiService *EthereumApiService
+	getPolWalletNFTsRequest *GetPolWalletNFTsRequest
+}
+
+func (r ApiGetEthWalletValuationRequest) GetPolWalletNFTsRequest(getPolWalletNFTsRequest GetPolWalletNFTsRequest) ApiGetEthWalletValuationRequest {
+	r.getPolWalletNFTsRequest = &getPolWalletNFTsRequest
+	return r
+}
+
+func (r ApiGetEthWalletValuationRequest) Execute() (*http.Response, error) {
+	return r.ApiService.GetEthWalletValuationExecute(r)
+}
+
+/*
+GetEthWalletValuation Value All Tokens Owned by Wallet
+
+Returns valuation of all tokens owned for a given wallet
+
+ @param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+ @return ApiGetEthWalletValuationRequest
+*/
+func (a *EthereumApiService) GetEthWalletValuation(ctx context.Context) ApiGetEthWalletValuationRequest {
+	return ApiGetEthWalletValuationRequest{
+		ApiService: a,
+		ctx: ctx,
+	}
+}
+
+// Execute executes the request
+func (a *EthereumApiService) GetEthWalletValuationExecute(r ApiGetEthWalletValuationRequest) (*http.Response, error) {
+	var (
+		localVarHTTPMethod   = http.MethodPost
+		localVarPostBody     interface{}
+		formFiles            []formFile
+	)
+
+	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "EthereumApiService.GetEthWalletValuation")
+	if err != nil {
+		return nil, &GenericOpenAPIError{error: err.Error()}
+	}
+
+	localVarPath := localBasePath + "/insights/eth/getWalletValuation"
+
+	localVarHeaderParams := make(map[string]string)
+	localVarQueryParams := url.Values{}
+	localVarFormParams := url.Values{}
+
+	// to determine the Content-Type header
+	localVarHTTPContentTypes := []string{"application/json"}
+
+	// set Content-Type header
+	localVarHTTPContentType := selectHeaderContentType(localVarHTTPContentTypes)
+	if localVarHTTPContentType != "" {
+		localVarHeaderParams["Content-Type"] = localVarHTTPContentType
+	}
+
+	// to determine the Accept header
+	localVarHTTPHeaderAccepts := []string{"application/json"}
+
+	// set Accept header
+	localVarHTTPHeaderAccept := selectHeaderAccept(localVarHTTPHeaderAccepts)
+	if localVarHTTPHeaderAccept != "" {
+		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
+	}
+	// body params
+	localVarPostBody = r.getPolWalletNFTsRequest
+	if r.ctx != nil {
+		// API Key Authentication
+		if auth, ok := r.ctx.Value(ContextAPIKeys).(map[string]APIKey); ok {
+			if apiKey, ok := auth["api_key"]; ok {
+				var key string
+				if apiKey.Prefix != "" {
+					key = apiKey.Prefix + " " + apiKey.Key
+				} else {
+					key = apiKey.Key
+				}
+				localVarHeaderParams["x-api-key"] = key
+			}
+		}
+	}
+	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
+	if err != nil {
+		return nil, err
+	}
+
+	localVarHTTPResponse, err := a.client.callAPI(req)
+	if err != nil || localVarHTTPResponse == nil {
+		return localVarHTTPResponse, err
+	}
+
+	localVarBody, err := io.ReadAll(localVarHTTPResponse.Body)
+	localVarHTTPResponse.Body.Close()
+	localVarHTTPResponse.Body = io.NopCloser(bytes.NewBuffer(localVarBody))
+	if err != nil {
+		return localVarHTTPResponse, err
+	}
+
+	if localVarHTTPResponse.StatusCode >= 300 {
+		newErr := &GenericOpenAPIError{
+			body:  localVarBody,
+			error: localVarHTTPResponse.Status,
+		}
+		return localVarHTTPResponse, newErr
+	}
+
+	return localVarHTTPResponse, nil
+}
+
 type ApiGetEthWashTradeRequest struct {
 	ctx context.Context
 	ApiService *EthereumApiService

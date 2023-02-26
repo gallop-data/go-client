@@ -5014,6 +5014,73 @@ paths:
       summary: Wallet Activity Labels
       tags:
       - Ethereum
+  /insights/eth/getWalletValuation:
+    post:
+      description: Returns valuation of all tokens owned for a given wallet
+      operationId: getEthWalletValuation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getPolWalletNFTs_request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                status: 200
+                response:
+                  total_items: 4
+                  nfts_valued: 3
+                  wallet_value: 99.164
+                  liquidation_value: 88.5258
+                  nfts_owned:
+                  - collection_name: CRYPTOPUNKS
+                    sub_collection_tag: null
+                    collection_address: 0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb
+                    symbol: Ͼ
+                    type: ERC-721
+                    token_id: "6561"
+                    amount_owned: "1"
+                    appraised_price: 78.0208
+                    liquidation_price: 69.8141
+                  - collection_name: Art Blocks
+                    sub_collection_tag: chromie-squiggle-by-snowfro
+                    collection_address: 0x059edd72cd353df5106d2b9cc5ab83a52287ac3a
+                    symbol: BLOCKS
+                    type: ERC-721
+                    token_id: "9426"
+                    amount_owned: "1"
+                    appraised_price: 12.9411
+                    liquidation_price: 11.4637
+                  - collection_name: QQL Mint Pass
+                    sub_collection_tag: null
+                    collection_address: 0xc73b17179bf0c59cd5860bb25247d1d1092c1088
+                    symbol: QQL-MP
+                    type: ERC-721
+                    token_id: "960"
+                    amount_owned: "1"
+                    appraised_price: 8.2021
+                    liquidation_price: 7.248
+                  - collection_name: FlyFrogs
+                    sub_collection_tag: null
+                    collection_address: 0x795108498c0ec7cdd4b1d62a27344e600d39c6d1
+                    symbol: FlyFrogs
+                    type: ERC-1155
+                    token_id: "3"
+                    amount_owned: "1"
+                    appraised_price: null
+                    liquidation_price: null
+          description: An object containing the tokens owned by this wallet
+        "400":
+          description: Bad request
+        "403":
+          description: Unauthorized
+      security:
+      - api_key: []
+      summary: Value All Tokens Owned by Wallet
+      tags:
+      - Ethereum
   /insights/sol/getCustomCollectionRisk:
     post:
       description: Returns summary of customizable volatility and risk metrics for
@@ -8528,6 +8595,10 @@ components:
             example: Fontana
             type: string
           type: array
+        normalized:
+          description: Return normalized data across marketplaces
+          example: true
+          type: boolean
       required:
       - collection_address
       type: object

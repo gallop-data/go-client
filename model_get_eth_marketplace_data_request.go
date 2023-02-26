@@ -24,6 +24,8 @@ type GetEthMarketplaceDataRequest struct {
 	CollectionAddress []string `json:"collection_address"`
 	// Array of sub collections (e.g. Art Blocks)
 	SubCollectionTags []string `json:"sub_collection_tags,omitempty"`
+	// Return normalized data across marketplaces
+	Normalized *bool `json:"normalized,omitempty"`
 }
 
 // NewGetEthMarketplaceDataRequest instantiates a new GetEthMarketplaceDataRequest object
@@ -100,6 +102,38 @@ func (o *GetEthMarketplaceDataRequest) SetSubCollectionTags(v []string) {
 	o.SubCollectionTags = v
 }
 
+// GetNormalized returns the Normalized field value if set, zero value otherwise.
+func (o *GetEthMarketplaceDataRequest) GetNormalized() bool {
+	if o == nil || IsNil(o.Normalized) {
+		var ret bool
+		return ret
+	}
+	return *o.Normalized
+}
+
+// GetNormalizedOk returns a tuple with the Normalized field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *GetEthMarketplaceDataRequest) GetNormalizedOk() (*bool, bool) {
+	if o == nil || IsNil(o.Normalized) {
+		return nil, false
+	}
+	return o.Normalized, true
+}
+
+// HasNormalized returns a boolean if a field has been set.
+func (o *GetEthMarketplaceDataRequest) HasNormalized() bool {
+	if o != nil && !IsNil(o.Normalized) {
+		return true
+	}
+
+	return false
+}
+
+// SetNormalized gets a reference to the given bool and assigns it to the Normalized field.
+func (o *GetEthMarketplaceDataRequest) SetNormalized(v bool) {
+	o.Normalized = &v
+}
+
 func (o GetEthMarketplaceDataRequest) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
 	if err != nil {
@@ -113,6 +147,9 @@ func (o GetEthMarketplaceDataRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize["collection_address"] = o.CollectionAddress
 	if !IsNil(o.SubCollectionTags) {
 		toSerialize["sub_collection_tags"] = o.SubCollectionTags
+	}
+	if !IsNil(o.Normalized) {
+		toSerialize["normalized"] = o.Normalized
 	}
 	return toSerialize, nil
 }

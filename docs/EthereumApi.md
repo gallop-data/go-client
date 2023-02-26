@@ -33,6 +33,7 @@ Method | HTTP request | Description
 [**GetEthWalletLabels**](EthereumApi.md#GetEthWalletLabels) | **Post** /insights/eth/getWalletLabels | Wallet Activity Labels
 [**GetEthWalletNFTs**](EthereumApi.md#GetEthWalletNFTs) | **Post** /data/eth/getWalletNFTs | Tokens Owned by Wallet
 [**GetEthWalletTransactions**](EthereumApi.md#GetEthWalletTransactions) | **Post** /data/eth/getWalletTransactions | Historical Token Transactions by Wallet
+[**GetEthWalletValuation**](EthereumApi.md#GetEthWalletValuation) | **Post** /insights/eth/getWalletValuation | Value All Tokens Owned by Wallet
 [**GetEthWashTrade**](EthereumApi.md#GetEthWashTrade) | **Post** /analytics/eth/getWashTrade | Wash Trades by Transaction
 [**GetEthWashTransactions**](EthereumApi.md#GetEthWashTransactions) | **Post** /analytics/eth/getWashTransactions | Wash Trades by Collection
 
@@ -1875,6 +1876,70 @@ Other parameters are passed through a pointer to a apiGetEthWalletTransactionsRe
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **getEthWalletTransactionsRequest** | [**GetEthWalletTransactionsRequest**](GetEthWalletTransactionsRequest.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetEthWalletValuation
+
+> GetEthWalletValuation(ctx).GetPolWalletNFTsRequest(getPolWalletNFTsRequest).Execute()
+
+Value All Tokens Owned by Wallet
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+)
+
+func main() {
+    getPolWalletNFTsRequest := *openapiclient.NewGetPolWalletNFTsRequest("0xab0cda4cc21207fd9433356afe9428b6fac8a8a5") // GetPolWalletNFTsRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    r, err := apiClient.EthereumApi.GetEthWalletValuation(context.Background()).GetPolWalletNFTsRequest(getPolWalletNFTsRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `EthereumApi.GetEthWalletValuation``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiGetEthWalletValuationRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **getPolWalletNFTsRequest** | [**GetPolWalletNFTsRequest**](GetPolWalletNFTsRequest.md) |  | 
 
 ### Return type
 
