@@ -209,6 +209,28 @@ func Test_openapi_EthereumApiService(t *testing.T) {
 
 	})
 
+	t.Run("Test EthereumApiService GetEthLiveListings", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.EthereumApi.GetEthLiveListings(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
+	t.Run("Test EthereumApiService GetEthLiveOffers", func(t *testing.T) {
+
+		t.Skip("skip test")  // remove to run test
+
+		httpRes, err := apiClient.EthereumApi.GetEthLiveOffers(context.Background()).Execute()
+
+		require.Nil(t, err)
+		assert.Equal(t, 200, httpRes.StatusCode)
+
+	})
+
 	t.Run("Test EthereumApiService GetEthMarketplaceData", func(t *testing.T) {
 
 		t.Skip("skip test")  // remove to run test

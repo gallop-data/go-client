@@ -554,6 +554,83 @@ paths:
       summary: Collection Summary by Marketplace
       tags:
       - Ethereum
+  /data/eth/getLiveListings:
+    post:
+      description: Returns live listings for a collection
+      operationId: getEthLiveListings
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getEthLiveListings_request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                status: 200
+                response:
+                  collection_address: 0x60e4d786628fea6478f785a6d7e704777c86a7c6
+                  total_listings: 2
+                  listings:
+                  - token_id: "4244"
+                    eth_value: 15.29
+                    marketplace_name: Blur
+                    owner: 0x5e1416e0ec35b47a6b7687c5e783e9b98a83dd45
+                    listed_at: 2023-03-06T10:46:57.000Z
+                    suspicious: true
+                  - token_id: "6365"
+                    eth_value: 15.319
+                    marketplace_name: Blur
+                    owner: 0x77e3e957082ca648c1c5b0f3e6aec00ab1245186
+                    listed_at: 2023-03-06T18:28:37.000Z
+                    suspicious: true
+          description: OK
+        "400":
+          description: Bad request
+        "403":
+          description: Unauthorized
+      security:
+      - api_key: []
+      summary: Collection live listings
+      tags:
+      - Ethereum
+  /data/eth/getLiveOffers:
+    post:
+      description: Returns live offers for a collection
+      operationId: getEthLiveOffers
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getEthLiveListings_request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                status: 200
+                response:
+                  collection_address: 0x09233d553058c2f42ba751c87816a8e9fae7ef10
+                  offers:
+                  - eth_value: 0.87
+                    unique_bidders: 12
+                    number_of_offers: 20
+                    marketplace: Blur
+                  - eth_value: 0.86
+                    unique_bidders: 18
+                    number_of_offers: 36
+                    marketplace: Blur
+          description: OK
+        "400":
+          description: Bad request
+        "403":
+          description: Unauthorized
+      security:
+      - api_key: []
+      summary: Collection live offers
+      tags:
+      - Ethereum
   /data/eth/getMarketplaceTraitData:
     post:
       description: Returns listing statistics for a collection by trait and marketplace
@@ -7745,6 +7822,15 @@ components:
           description: Exclude suspected wash transactions?
           example: true
           type: boolean
+      required:
+      - collection_address
+      type: object
+    getEthLiveListings_request:
+      properties:
+        collection_address:
+          description: The contract address of a collection.
+          example: 0x01cc1bd2dece86e54481f1e6aeffc2fcc6915480
+          type: string
       required:
       - collection_address
       type: object

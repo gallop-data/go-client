@@ -94,6 +94,8 @@ Class | Method | HTTP request | Description
 *EthereumApi* | [**GetEthHistoricalEvents**](docs/EthereumApi.md#getethhistoricalevents) | **Post** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 *EthereumApi* | [**GetEthHistoricalTransactions**](docs/EthereumApi.md#getethhistoricaltransactions) | **Post** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 *EthereumApi* | [**GetEthLeaderBoard**](docs/EthereumApi.md#getethleaderboard) | **Post** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
+*EthereumApi* | [**GetEthLiveListings**](docs/EthereumApi.md#getethlivelistings) | **Post** /data/eth/getLiveListings | Collection live listings
+*EthereumApi* | [**GetEthLiveOffers**](docs/EthereumApi.md#getethliveoffers) | **Post** /data/eth/getLiveOffers | Collection live offers
 *EthereumApi* | [**GetEthMarketplaceData**](docs/EthereumApi.md#getethmarketplacedata) | **Post** /data/eth/getMarketplaceData | Collection Summary by Marketplace
 *EthereumApi* | [**GetEthMarketplaceFloorPrice**](docs/EthereumApi.md#getethmarketplacefloorprice) | **Post** /data/eth/getMarketplaceFloorPrice | Marketplace Floor Price by Collection
 *EthereumApi* | [**GetEthMarketplaceTraitData**](docs/EthereumApi.md#getethmarketplacetraitdata) | **Post** /data/eth/getMarketplaceTraitData | Collection Listings by Trait &amp; Marketplace
@@ -188,6 +190,7 @@ Class | Method | HTTP request | Description
  - [GetEthHistoricalEventsRequest](docs/GetEthHistoricalEventsRequest.md)
  - [GetEthHistoricalTransactionsRequest](docs/GetEthHistoricalTransactionsRequest.md)
  - [GetEthLeaderBoardRequest](docs/GetEthLeaderBoardRequest.md)
+ - [GetEthLiveListingsRequest](docs/GetEthLiveListingsRequest.md)
  - [GetEthMarketplaceDataRequest](docs/GetEthMarketplaceDataRequest.md)
  - [GetEthMarketplaceFloorPriceRequest](docs/GetEthMarketplaceFloorPriceRequest.md)
  - [GetEthMarketplaceTraitDataRequest](docs/GetEthMarketplaceTraitDataRequest.md)

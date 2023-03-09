@@ -21,6 +21,8 @@ Method | HTTP request | Description
 [**GetEthHistoricalEvents**](EthereumApi.md#GetEthHistoricalEvents) | **Post** /data/eth/getHistoricalEvents | Marketplace Activity by Collection
 [**GetEthHistoricalTransactions**](EthereumApi.md#GetEthHistoricalTransactions) | **Post** /data/eth/getHistoricalTransactions | Historical Transactions by Collection
 [**GetEthLeaderBoard**](EthereumApi.md#GetEthLeaderBoard) | **Post** /analytics/eth/getLeaderBoard | Ethereum Leaderboard by Collection
+[**GetEthLiveListings**](EthereumApi.md#GetEthLiveListings) | **Post** /data/eth/getLiveListings | Collection live listings
+[**GetEthLiveOffers**](EthereumApi.md#GetEthLiveOffers) | **Post** /data/eth/getLiveOffers | Collection live offers
 [**GetEthMarketplaceData**](EthereumApi.md#GetEthMarketplaceData) | **Post** /data/eth/getMarketplaceData | Collection Summary by Marketplace
 [**GetEthMarketplaceFloorPrice**](EthereumApi.md#GetEthMarketplaceFloorPrice) | **Post** /data/eth/getMarketplaceFloorPrice | Marketplace Floor Price by Collection
 [**GetEthMarketplaceTraitData**](EthereumApi.md#GetEthMarketplaceTraitData) | **Post** /data/eth/getMarketplaceTraitData | Collection Listings by Trait &amp; Marketplace
@@ -1108,6 +1110,134 @@ Other parameters are passed through a pointer to a apiGetEthLeaderBoardRequest s
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **getEthLeaderBoardRequest** | [**GetEthLeaderBoardRequest**](GetEthLeaderBoardRequest.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetEthLiveListings
+
+> GetEthLiveListings(ctx).GetEthLiveListingsRequest(getEthLiveListingsRequest).Execute()
+
+Collection live listings
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+)
+
+func main() {
+    getEthLiveListingsRequest := *openapiclient.NewGetEthLiveListingsRequest("0x01cc1bd2dece86e54481f1e6aeffc2fcc6915480") // GetEthLiveListingsRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    r, err := apiClient.EthereumApi.GetEthLiveListings(context.Background()).GetEthLiveListingsRequest(getEthLiveListingsRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `EthereumApi.GetEthLiveListings``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiGetEthLiveListingsRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **getEthLiveListingsRequest** | [**GetEthLiveListingsRequest**](GetEthLiveListingsRequest.md) |  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetEthLiveOffers
+
+> GetEthLiveOffers(ctx).GetEthLiveListingsRequest(getEthLiveListingsRequest).Execute()
+
+Collection live offers
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
+)
+
+func main() {
+    getEthLiveListingsRequest := *openapiclient.NewGetEthLiveListingsRequest("0x01cc1bd2dece86e54481f1e6aeffc2fcc6915480") // GetEthLiveListingsRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    r, err := apiClient.EthereumApi.GetEthLiveOffers(context.Background()).GetEthLiveListingsRequest(getEthLiveListingsRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `EthereumApi.GetEthLiveOffers``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiGetEthLiveOffersRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **getEthLiveListingsRequest** | [**GetEthLiveListingsRequest**](GetEthLiveListingsRequest.md) |  | 
 
 ### Return type
 
