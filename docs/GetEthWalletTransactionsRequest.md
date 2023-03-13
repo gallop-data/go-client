@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**WalletAddress** | Pointer to **string** | The wallet address to search. | [optional] 
+**WalletAddress** | **string** | The wallet address to search. | 
 **Page** | Pointer to **int32** | The pagination cursor. | [optional] 
 **PageSize** | Pointer to **int32** | The number of records returned per page. | [optional] 
 
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 
 ### NewGetEthWalletTransactionsRequest
 
-`func NewGetEthWalletTransactionsRequest() *GetEthWalletTransactionsRequest`
+`func NewGetEthWalletTransactionsRequest(walletAddress string, ) *GetEthWalletTransactionsRequest`
 
 NewGetEthWalletTransactionsRequest instantiates a new GetEthWalletTransactionsRequest object
 This constructor will assign default values to properties that have it defined,
@@ -46,11 +46,6 @@ and a boolean to check if the value has been set.
 
 SetWalletAddress sets WalletAddress field to given value.
 
-### HasWalletAddress
-
-`func (o *GetEthWalletTransactionsRequest) HasWalletAddress() bool`
-
-HasWalletAddress returns a boolean if a field has been set.
 
 ### GetPage
 

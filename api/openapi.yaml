@@ -993,112 +993,121 @@ paths:
               example:
                 status: 200
                 response:
-                  collection_address: 0x3fe1a4c1481c8351e91b64d5c398b159de07cbc5
+                  collection_address: 0x764aeebcf425d56800ef2c84f2578689415a2daa
                   total_items: 10
                   total_pages: 1
                   page: 1
-                  marketplaces:
-                  - marketplace: OpenSea
-                    events: []
-                  - marketplace: X2Y2
-                    events: []
-                  - marketplace: Larvalabs
-                    events: []
-                  - marketplace: Crytposlam
-                    events: []
-                  - marketplace: LooksRare
-                    events:
-                    - token_id: "3202"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0x29e44b41e191531b07d6b5cb9e03c3bece1373aa
-                      eth_value: 0.207
-                      event_date: 2022-10-30T13:58:47.000Z
-                      start_date: 2022-10-29T16:02:34.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "314831245"
-                    - token_id: "3204"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0x0e6f415fea396f980d8c21e5b738beba2f7d2f04
-                      eth_value: 0.206
-                      event_date: 2022-10-30T13:53:47.000Z
-                      start_date: 2022-10-29T16:02:39.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "314828251"
-                    - token_id: "3196"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0x0f97c4b0b7e2671562d115c0efa5951959e4cf08
-                      eth_value: 0.205
-                      event_date: 2022-10-30T13:50:11.000Z
-                      start_date: 2022-10-29T16:02:43.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "314825942"
-                    - token_id: "3213"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0xae9c73fd0fd237c1c6f66fe009d24ce969e98704
-                      eth_value: 0.209
-                      event_date: 2022-10-29T18:05:47.000Z
-                      start_date: 2022-10-29T16:02:19.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "313825620"
-                    - token_id: "3187"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0xae9c73fd0fd237c1c6f66fe009d24ce969e98704
-                      eth_value: 0.204
-                      event_date: 2022-10-29T18:05:47.000Z
-                      start_date: 2022-10-29T16:02:47.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "313825622"
-                    - token_id: "3189"
-                      event_type: sale
-                      from_address: 0x36f6a4b5d8d603eae8e67ce597ca508cd9db3e53
-                      to_address: 0xae9c73fd0fd237c1c6f66fe009d24ce969e98704
-                      eth_value: 0.209
-                      event_date: 2022-10-29T18:05:47.000Z
-                      start_date: 2022-10-29T16:02:52.000Z
-                      end_date: 2022-11-28T16:00:51.000Z
-                      event_id: "313825619"
-                    - token_id: "7975"
-                      event_type: sale
-                      from_address: 0x7c6a702f64e4d47a786dce96527123ec4d6e3343
-                      to_address: 0x0000006f43b26ba724ae3ddb0c55536d64e5f985
-                      eth_value: 0.1695314299422977
-                      event_date: 2022-10-26T00:21:11.000Z
-                      start_date: 2022-10-26T00:17:20.000Z
-                      end_date: 2022-10-26T00:25:40.000Z
-                      event_id: "309412762"
-                    - token_id: "231"
-                      event_type: sale
-                      from_address: 0xbd9e27ded42cae43896551e345b650763f6c82db
-                      to_address: 0x0000000009cb38fb8a1bbb8ada23c8261118f019
-                      eth_value: 0.15
-                      event_date: 2022-08-21T23:17:43.000Z
-                      start_date: 2022-08-20T19:40:39.000Z
-                      end_date: 2022-09-18T09:46:41.000Z
-                      event_id: "250634532"
-                    - token_id: "4789"
-                      event_type: sale
-                      from_address: 0xbd9e27ded42cae43896551e345b650763f6c82db
-                      to_address: 0x83c8f28c26bf6aaca652df1dbbe0e1b56f8baba2
-                      eth_value: 0.18
-                      event_date: 2022-08-21T23:17:16.000Z
-                      start_date: 2022-08-20T19:41:10.000Z
-                      end_date: 2022-09-18T09:51:22.000Z
-                      event_id: "250634503"
-                    - token_id: "2868"
-                      event_type: sale
-                      from_address: 0x6d660980b00c3405c2dec173cf2259b15572b9b5
-                      to_address: 0x3cd5e03183e5880d5c0aba46a259fcad91e9b7f7
-                      eth_value: 0.129
-                      event_date: 2022-08-21T05:07:13.000Z
-                      start_date: 2022-08-20T21:13:52.000Z
-                      end_date: 2022-08-21T21:13:48.000Z
-                      event_id: "250050462"
-                    collection_id: 0x3fe1a4c1481c8351e91b64d5c398b159de07cbc5
+                  events:
+                  - token_id: "22591"
+                    event_type: transfer
+                    from_address: 0x4d6283b4198c0039f2addc6a8784bbdef6e259eb
+                    to_address: 0x330251b47edf5a5b2911451b9be840d0d03ae504
+                    eth_value: null
+                    event_date: 2023-02-27T13:00:35.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "452128763"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "22103"
+                    event_type: transfer
+                    from_address: 0x41758beb6011558ea86dfd68d5715a6e05f423ef
+                    to_address: 0xc1c9a15ad507a1a9ca494f53768bff6b5181a8ba
+                    eth_value: null
+                    event_date: 2023-02-27T12:59:47.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "452127206"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "7456"
+                    event_type: transfer
+                    from_address: 0x41758beb6011558ea86dfd68d5715a6e05f423ef
+                    to_address: 0xc1c9a15ad507a1a9ca494f53768bff6b5181a8ba
+                    eth_value: null
+                    event_date: 2023-02-27T12:58:59.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "452126203"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "26363"
+                    event_type: transfer
+                    from_address: 0xfa4d5258804d7723eb6a934c11b1bd423bc31623
+                    to_address: 0xedce6a7105cb3d298e356b416cafd5cea4a433ff
+                    eth_value: null
+                    event_date: 2023-02-17T17:26:35.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435794451"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "16444"
+                    event_type: transfer
+                    from_address: 0xbd1240f9376ef32eb8e744d049163fe614f55166
+                    to_address: 0xf7e11960b6f84b3ea798f15fa8627a3bcffbefa2
+                    eth_value: null
+                    event_date: 2023-02-17T17:20:23.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435784638"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "7122"
+                    event_type: transfer
+                    from_address: 0x7df70b612040c682d1cb2e32017446e230fcd747
+                    to_address: 0xa9ad0a458e081c2d042ce806ac7ea7cdca824dc2
+                    eth_value: null
+                    event_date: 2023-02-17T17:11:59.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435771023"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "7534"
+                    event_type: transfer
+                    from_address: 0x409f37a9d4cbd541f93ad8b9f10e8ac6706a34ce
+                    to_address: 0x4363e7e54f81a8cb39dd556c66ca41e603732e91
+                    eth_value: null
+                    event_date: 2023-02-17T16:47:47.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435729489"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "15663"
+                    event_type: transfer
+                    from_address: 0x24a39cfc33d0d5e473ca2af2ccdce2af60f15af1
+                    to_address: 0xd2e46bcd3c16065fa6d3c291a23635f7322fe1be
+                    eth_value: null
+                    event_date: 2023-02-17T16:43:47.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435722917"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "15789"
+                    event_type: transfer
+                    from_address: 0x24a39cfc33d0d5e473ca2af2ccdce2af60f15af1
+                    to_address: 0x6f435a9421653b27f048957b8ba2092d65a711f9
+                    eth_value: null
+                    event_date: 2023-02-17T16:41:59.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435719742"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
+                  - token_id: "4180"
+                    event_type: transfer
+                    from_address: 0xfa88dd019d4bcb8ba2ef8ce63e64d48e727b0b33
+                    to_address: 0x4bc8f720537b2a9dafad4c2ca9be9099c4ef0986
+                    eth_value: null
+                    event_date: 2023-02-17T16:40:23.000Z
+                    start_date: null
+                    end_date: null
+                    event_id: "435717356"
+                    collection_id: 0x764aeebcf425d56800ef2c84f2578689415a2daa
+                    marketplace: LooksRare
           description: An object of property arrays.
         "400":
           description: Bad request
@@ -7021,6 +7030,8 @@ components:
           - 1000
           example: 100
           type: integer
+      required:
+      - wallet_address
       type: object
     getEthCollectionForecasts_request:
       properties:
@@ -8288,6 +8299,10 @@ components:
           - 1000
           example: 100
           type: integer
+        event_date:
+          description: "Only return events occuring after this day [YYYY-MM-DD]"
+          example: 2023-01-15
+          type: string
         event_type:
           description: "The type of event: list, transfer, offer, mint, sale, cancel_list\
             \ or cancel_offer"

@@ -28,6 +28,8 @@ type GetEthHistoricalEventsRequest struct {
 	Page *int32 `json:"page,omitempty"`
 	// The number of records returned per page.
 	PageSize *int32 `json:"page_size,omitempty"`
+	// Only return events occuring after this day [YYYY-MM-DD]
+	EventDate *string `json:"event_date,omitempty"`
 	// The type of event: list, transfer, offer, mint, sale, cancel_list or cancel_offer
 	EventType *string `json:"event_type,omitempty"`
 }
@@ -170,6 +172,38 @@ func (o *GetEthHistoricalEventsRequest) SetPageSize(v int32) {
 	o.PageSize = &v
 }
 
+// GetEventDate returns the EventDate field value if set, zero value otherwise.
+func (o *GetEthHistoricalEventsRequest) GetEventDate() string {
+	if o == nil || IsNil(o.EventDate) {
+		var ret string
+		return ret
+	}
+	return *o.EventDate
+}
+
+// GetEventDateOk returns a tuple with the EventDate field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *GetEthHistoricalEventsRequest) GetEventDateOk() (*string, bool) {
+	if o == nil || IsNil(o.EventDate) {
+		return nil, false
+	}
+	return o.EventDate, true
+}
+
+// HasEventDate returns a boolean if a field has been set.
+func (o *GetEthHistoricalEventsRequest) HasEventDate() bool {
+	if o != nil && !IsNil(o.EventDate) {
+		return true
+	}
+
+	return false
+}
+
+// SetEventDate gets a reference to the given string and assigns it to the EventDate field.
+func (o *GetEthHistoricalEventsRequest) SetEventDate(v string) {
+	o.EventDate = &v
+}
+
 // GetEventType returns the EventType field value if set, zero value otherwise.
 func (o *GetEthHistoricalEventsRequest) GetEventType() string {
 	if o == nil || IsNil(o.EventType) {
@@ -221,6 +255,9 @@ func (o GetEthHistoricalEventsRequest) ToMap() (map[string]interface{}, error) {
 	}
 	if !IsNil(o.PageSize) {
 		toSerialize["page_size"] = o.PageSize
+	}
+	if !IsNil(o.EventDate) {
+		toSerialize["event_date"] = o.EventDate
 	}
 	if !IsNil(o.EventType) {
 		toSerialize["event_type"] = o.EventType

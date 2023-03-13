@@ -21,7 +21,7 @@ var _ MappedNullable = &GetEthWalletTransactionsRequest{}
 // GetEthWalletTransactionsRequest struct for GetEthWalletTransactionsRequest
 type GetEthWalletTransactionsRequest struct {
 	// The wallet address to search.
-	WalletAddress *string `json:"wallet_address,omitempty"`
+	WalletAddress string `json:"wallet_address"`
 	// The pagination cursor.
 	Page *int32 `json:"page,omitempty"`
 	// The number of records returned per page.
@@ -32,8 +32,9 @@ type GetEthWalletTransactionsRequest struct {
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewGetEthWalletTransactionsRequest() *GetEthWalletTransactionsRequest {
+func NewGetEthWalletTransactionsRequest(walletAddress string) *GetEthWalletTransactionsRequest {
 	this := GetEthWalletTransactionsRequest{}
+	this.WalletAddress = walletAddress
 	return &this
 }
 
@@ -45,36 +46,28 @@ func NewGetEthWalletTransactionsRequestWithDefaults() *GetEthWalletTransactionsR
 	return &this
 }
 
-// GetWalletAddress returns the WalletAddress field value if set, zero value otherwise.
+// GetWalletAddress returns the WalletAddress field value
 func (o *GetEthWalletTransactionsRequest) GetWalletAddress() string {
-	if o == nil || IsNil(o.WalletAddress) {
+	if o == nil {
 		var ret string
 		return ret
 	}
-	return *o.WalletAddress
+
+	return o.WalletAddress
 }
 
-// GetWalletAddressOk returns a tuple with the WalletAddress field value if set, nil otherwise
+// GetWalletAddressOk returns a tuple with the WalletAddress field value
 // and a boolean to check if the value has been set.
 func (o *GetEthWalletTransactionsRequest) GetWalletAddressOk() (*string, bool) {
-	if o == nil || IsNil(o.WalletAddress) {
+	if o == nil {
 		return nil, false
 	}
-	return o.WalletAddress, true
+	return &o.WalletAddress, true
 }
 
-// HasWalletAddress returns a boolean if a field has been set.
-func (o *GetEthWalletTransactionsRequest) HasWalletAddress() bool {
-	if o != nil && !IsNil(o.WalletAddress) {
-		return true
-	}
-
-	return false
-}
-
-// SetWalletAddress gets a reference to the given string and assigns it to the WalletAddress field.
+// SetWalletAddress sets field value
 func (o *GetEthWalletTransactionsRequest) SetWalletAddress(v string) {
-	o.WalletAddress = &v
+	o.WalletAddress = v
 }
 
 // GetPage returns the Page field value if set, zero value otherwise.
@@ -151,9 +144,7 @@ func (o GetEthWalletTransactionsRequest) MarshalJSON() ([]byte, error) {
 
 func (o GetEthWalletTransactionsRequest) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
-	if !IsNil(o.WalletAddress) {
-		toSerialize["wallet_address"] = o.WalletAddress
-	}
+	toSerialize["wallet_address"] = o.WalletAddress
 	if !IsNil(o.Page) {
 		toSerialize["page"] = o.Page
 	}

@@ -1982,7 +1982,7 @@ import (
 )
 
 func main() {
-    getEthWalletTransactionsRequest := *openapiclient.NewGetEthWalletTransactionsRequest() // GetEthWalletTransactionsRequest |  (optional)
+    getEthWalletTransactionsRequest := *openapiclient.NewGetEthWalletTransactionsRequest("0xe724e14c6b7599b710804df390e39928abfed082") // GetEthWalletTransactionsRequest |  (optional)
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)

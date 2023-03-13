@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **TokenId** | Pointer to **string** | The id for the token. | [optional] 
 **Page** | Pointer to **int32** | The pagination cursor. | [optional] 
 **PageSize** | Pointer to **int32** | The number of records returned per page. | [optional] 
+**EventDate** | Pointer to **string** | Only return events occuring after this day [YYYY-MM-DD] | [optional] 
 **EventType** | Pointer to **string** | The type of event: list, transfer, offer, mint, sale, cancel_list or cancel_offer | [optional] 
 
 ## Methods
@@ -123,6 +124,31 @@ SetPageSize sets PageSize field to given value.
 `func (o *GetEthHistoricalEventsRequest) HasPageSize() bool`
 
 HasPageSize returns a boolean if a field has been set.
+
+### GetEventDate
+
+`func (o *GetEthHistoricalEventsRequest) GetEventDate() string`
+
+GetEventDate returns the EventDate field if non-nil, zero value otherwise.
+
+### GetEventDateOk
+
+`func (o *GetEthHistoricalEventsRequest) GetEventDateOk() (*string, bool)`
+
+GetEventDateOk returns a tuple with the EventDate field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetEventDate
+
+`func (o *GetEthHistoricalEventsRequest) SetEventDate(v string)`
+
+SetEventDate sets EventDate field to given value.
+
+### HasEventDate
+
+`func (o *GetEthHistoricalEventsRequest) HasEventDate() bool`
+
+HasEventDate returns a boolean if a field has been set.
 
 ### GetEventType
 
